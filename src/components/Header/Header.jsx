@@ -3,10 +3,19 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <section className="">
-        <h1 className="">
-            This is the header
-        </h1>
+    <section className="wrapper">
+        <div className="container">
+            <div className="logo">
+                Q
+            </div>
+
+            <div className="menu">
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">PROJECTS</a>
+                <a href="mailto:farsul78@gmail.com">CONTACT</a>
+            </div>
+        </div>
     </section>
   )
 }
