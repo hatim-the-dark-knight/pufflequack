@@ -7,27 +7,8 @@ const Header = () => {
     <div className="">
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Q</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link mx-2" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-2" href="#">CONTACT</a>
-              </li>
-            </ul>
-          </div>
+          <a class="navbar-brand" href="#">PuffleQuack</a>
+          
         </div>
       </nav>
     </div>

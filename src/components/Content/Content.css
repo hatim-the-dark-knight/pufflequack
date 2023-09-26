@@ -1,0 +1,15 @@
+.grid {
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 2rem 3rem;
+}
+
+.label {
+    padding-left: 1.25rem;
+}
+
+.addButton {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
