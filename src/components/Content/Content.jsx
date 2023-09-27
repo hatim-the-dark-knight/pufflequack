@@ -5,15 +5,15 @@ import data from '../../utils/categories.json'
 
 const Content = () => {
   return (
-    <Stack spacing={4} cols={3} rowHeight={250} className="grid">
-      <ImageList>
+    <Stack spacing={4} className="grid">
+      <ImageList cols={3} rowHeight={240} >
       {
         data.map((item, i) => {
           return(
             <ImageListItem id={i} >
               <img
-                srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.image}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.image}?w=164&h=164&fit=crop&auto=format`}
                 alt={item.title}
                 loading="lazy"
               />
