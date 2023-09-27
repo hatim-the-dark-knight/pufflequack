@@ -5,23 +5,24 @@ import data from '../../utils/categories.json'
 
 const Content = () => {
   return (
-    <Stack spacing={4} className="grid">
-      <ImageList cols={3} rowHeight={240} >
+    <Stack className="grid">
+      <ImageList cols={3} rowHeight={200} >
       {
         data.map((item, i) => {
           return(
             <ImageListItem id={i} >
               <img
-                srcSet={`${item.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.image}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item.image}?w=64&h=64`}
+                src={`${item.image}?w=64&h=64`}
                 alt={item.title}
-                loading="lazy"
               />
-              <ImageListItemBar
-                title={item.title}
-                subtitle={<span> {item.items.length}</span>}
-                position="below"
-              />
+              <a href='#' className='card-label'>  
+                <ImageListItemBar
+                  title={item.title}
+                  subtitle={<span> {item.items.length}</span>}
+                  position="below"
+                />
+              </a>
             </ImageListItem>
           )
         })

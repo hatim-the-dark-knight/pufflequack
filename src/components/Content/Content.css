@@ -8,3 +8,7 @@
 .MuiImageListItemBar-positionBelow {
     text-align: center;
 }
+
+.card-label {
+    color: snow;
+}
