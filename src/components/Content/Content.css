@@ -2,7 +2,11 @@
     background-color: black;
     color: white;
     position: relative;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
+}
+
+.MuiImageListItemBar-positionBelow {
+    text-align: center;
 }
 
 .label {
@@ -10,6 +14,4 @@
 }
 
 .addButton {
-    margin-top: 1rem;
-    margin-left: 2rem;
 }
