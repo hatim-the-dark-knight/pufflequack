@@ -1,129 +1,50 @@
 [
-    {
-      "title": "Item One",
-      "image": "Burger_148.png",
-      "items": [
-        {
-            "title": "Item 1",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 2",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 3",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        }
-      ]
-    },
-    {
-      "title": "Item Two",
-      "image": "Pizza_148.png",
-      "items": [
-        {
-            "title": "Item 1",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 2",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 3",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        }
-      ]
-    },
-    {
-      "title": "Item Three",
-      "image": "Burger_148.png",
-      "items": [
-        {
-            "title": "Item 1",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 2",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 3",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        }
-      ]
-    },
-    {
-      "title": "Item Four",
-      "image": "Pizza_148.png",
-      "items": [
-        {
-            "title": "Item 1",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 2",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 3",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        }
-      ]
-    },
-    {
-      "title": "Item Five",
-      "image": "Burger_148.png",
-      "items": [
-        {
-            "title": "Item 1",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 2",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 3",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        }
-      ]
-    },
-    {
-      "title": "Item Six",
-      "image": "Pizza_148.png",
-      "items": [
-        {
-            "title": "Item 1",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 2",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        },
-        {
-            "title": "Item 3",
-            "image": "Fries_148.png",
-            "price": "4.99"
-        }
-      ]
-    }
-  ]
-  
+  {
+    "name": "Restaurant I",
+    "place": "Holland",
+    "category": "Cuisine",
+    "rating": 4.4,
+    "price": 4.99,
+    "image": "/Restaurant_I.png"
+  },
+  {
+    "name": "Restaurant II",
+    "place": "Paris",
+    "category": "French",
+    "rating": 4.6,
+    "price": 6.99,
+    "image": "/Restaurant_II.png"
+  },
+  {
+    "name": "Restaurant III",
+    "place": "New York",
+    "category": "American",
+    "rating": 4.8,
+    "price": 7.99,
+    "image": "/Restaurant_III.png"
+  },
+  {
+    "name": "Restaurant IV",
+    "place": "Tokyo",
+    "category": "Japanese",
+    "rating": 4.7,
+    "price": 9.99,
+    "image": "/Restaurant_IV.png"
+  },
+  {
+    "name": "Restaurant V",
+    "place": "London",
+    "category": "British",
+    "rating": 4.5,
+    "price": 5.99,
+    "image": "/Restaurant_V.png"
+  },
+  {
+    "name": "Restaurant VI",
+    "place": "Sydney",
+    "category": "Australian",
+    "rating": 4.3,
+    "price": 8.99,
+    "image": "/Restaurant_VI.png"
+  }
+]

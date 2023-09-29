@@ -1,0 +1,17 @@
+/* In your CategoryMenu.css or your main stylesheet */
+
+.btn-list {
+    display: flex;
+    padding: 10px 20px;
+}
+  
+.menu-btn {
+    /* Your button styles here */
+    padding: 40px 20px; /* Adjust padding as needed */
+    margin: 5px; /* Adjust margin as needed */
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
