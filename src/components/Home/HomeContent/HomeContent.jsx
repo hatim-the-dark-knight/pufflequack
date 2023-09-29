@@ -1,7 +1,7 @@
 import React from 'react'
 import { Stack, ImageList, ImageListItem, ImageListItemBar } from '@mui/material'
 import './HomeContent.css'
-import data from '../../utils/categories.json'
+import data from '../../../utils/categories.json'
 
 const HomeContent = () => {
   return (

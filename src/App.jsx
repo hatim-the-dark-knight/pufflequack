@@ -1,18 +1,31 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import HomeContent from './components/HomeContent/HomeContent'
+import { Link, Route, Routes } from "react-router-dom"
 
-import CategoryMenu from './components/CategoryMenu/CategoryMenu'
+import Home from './components/Home/Home'
+import Cuisines from './components/Cuisines/Cuisines'
 
 function App() {
   return (
-    <>
-      <Header/>
-      <CategoryMenu/>
-      <HomeContent/>
-    </>
+    <div className="container">
+      <nav>
+        <ul>
+          <Link to="/pufflequack" class="list">
+            Home
+          </Link>
+          <Link to="/pufflequack/cuisines" class="list">
+            Cuisines
+          </Link>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/pufflequack" element={<Home />} />
+        <Route path="/pufflequack/cuisines" element={<Cuisines />} />
+        {/* <Route path="/details" element={<Live />} />
+        <Route path="/payment" element={<Contact />} /> */}
+      </Routes>
+    </div>
+    
   )
 }
 
