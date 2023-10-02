@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <div className="search-bar">
         <i class="fa fa-search"></i>
-        <input type="search" name="location-search" id="location-search" placeholder="Search Restaurants" />
+        <input type="text" class="form-control form-input" name="location-search" id="location-search" placeholder="Search Restaurants.." />
       </div>
     </div>
   )
