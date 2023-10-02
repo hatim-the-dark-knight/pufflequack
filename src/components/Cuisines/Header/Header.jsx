@@ -11,7 +11,8 @@ const Header = () => {
         </h3>
       </div>
       <div className="search-bar">
-        <input type="search" name="location-search" id="location-search" />
+        <i class="fa fa-search"></i>
+        <input type="search" name="location-search" id="location-search" placeholder="Search Restaurants" />
       </div>
     </div>
   )

@@ -1,0 +1,9 @@
+
+/* input::placeholder {
+    padding-left: 1rem;
+} */
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}

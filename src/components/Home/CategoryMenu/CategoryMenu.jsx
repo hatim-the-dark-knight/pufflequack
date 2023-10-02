@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 import './CategoryMenu.css'
+import { Link, Route, Routes } from "react-router-dom"
 
 const CategoryMenu = () => {
   return (
@@ -13,7 +14,9 @@ const CategoryMenu = () => {
                 Top Offers
             </button>
             <button className="menu-btn">
-                Cuisines
+                <Link to="/pufflequack/cuisines">
+                    Cuisines
+                </Link>
             </button>
         </div>
     </div>

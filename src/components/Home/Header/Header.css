@@ -34,8 +34,14 @@
     
   }
   
+.form-input:focus{
+    background-color: rgb(247, 249, 254);
+    box-shadow: none;
+    border:none;
+}
+
   /* Style the search input */
-  #location-search {
+  /* #location-search {
     width: 100%;
     padding: 5px;
     border: none;
@@ -45,7 +51,7 @@
   }
   
   /* Style the input placeholder text */
-  #location-search::placeholder {
+  /* #location-search::placeholder {
     color: #999;
-  }
+  }  */
   

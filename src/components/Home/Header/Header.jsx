@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
@@ -9,13 +9,13 @@ const Header = () => {
         <span className="location-label">
           Smart City, Kochi
         </span>
-        <a href="#">
+        <Link to="/pufflequack/profile">
           <img src="/Burger_148.png" className="profile-icon">
           </img>
-        </a>
+        </Link>
       </div>
       <div className="search-bar">
-        <input type="search" name="location-search" id="location-search" />
+        <input type="text" class="form-control form-input" name="location-search" id="location-search" placeholder="Search Restaurants.." />
       </div>
     </div>
   )
