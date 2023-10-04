@@ -14,7 +14,7 @@ const Restaurant = (props) => {
   return (
     <div className="">
       <div className="card">
-        <img src="/restaurant-i.jpg" alt="" className="card-img-top" />
+        <img src="/pufflequack/restaurant-i.jpg" alt="" className="card-img-top" />
         <div className="card-body">
           <h4 className="card-name">{name}</h4>
           <div className="top-content">

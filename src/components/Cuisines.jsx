@@ -1,6 +1,6 @@
 import React from 'react'
 import CuisineContent from './CuisineContent/CuisineContent'
-import Header from './Header/Header'
+import Header from './common/Header/Header'
 
 const Cuisines = () => {
   return (

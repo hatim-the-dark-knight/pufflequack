@@ -10,8 +10,9 @@ const Header = () => {
           Smart City, Kochi
         </span>
         <Link to="/pufflequack/profile">
-          <img src="/Burger_148.png" className="profile-icon">
-          </img>
+          <i class="bi-person-circle"></i>
+          {/* <img src="/Burger_148.png" className="profile-icon">
+          </img> */}
         </Link>
       </div>
       <div className="search-bar">

@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './CuisineContent.css'
 
-import data from '../../../utils/categories.json'
+import data from '../../utils/categories.json'
 
 const CuisineContent = () => {
   return (

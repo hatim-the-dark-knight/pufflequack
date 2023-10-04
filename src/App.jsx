@@ -2,13 +2,24 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link, Route, Routes } from "react-router-dom"
 import React from 'react'
-import Home from './components/Home/Home'
-import Cuisines from './components/Cuisines/Cuisines'
+import { useEffect } from 'react'
+import Home from './components/Home'
+import Cuisines from './components/Cuisines'
 import Restaurant from './components/Restaurant/Restaurant'
 import Profile from'./components/Profile/Profile'
 import data from './utils/categories.json'
 
+const bot = window.Telegram.WebApp;
+
 function App() {
+  useEffect(() => {
+    bot.ready();
+  });
+
+
+
+
+
   return (
     <div className="container">
       <Routes>
