@@ -27,7 +27,7 @@ const Restaurant = (props) => {
       event.preventDefault();
       // Handle form submission, you can access the form values in 'state'
       console.log(state);
-      bot.showPopup("This is just a test");
+      // bot.showPopup("This is just a test");
     };
 
   return (
