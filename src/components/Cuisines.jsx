@@ -10,7 +10,7 @@ const Cuisines = () => {
   }
   return (
     <>
-        <i class="bi-arrow-left" onClick={goBack}></i>
+        <i class="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
         <Header/>
         <CuisineContent/>
     </>

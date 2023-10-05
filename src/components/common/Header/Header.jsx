@@ -34,7 +34,6 @@ const Header = () => {
         <input type="text" onChange={e => setQuery(e.target.value)} class="form-control form-input" name="location-search" id="location-search" placeholder="Search Restaurants.." />
       </div>
       <div>
-        {query}
         {
           filteredItems.map((item, k) => {
             return(

@@ -1,50 +1,56 @@
 [
   {
-    "name": "Restaurant I",
-    "place": "Holland",
+    "name": "Tiger Restaurant",
+    "place": "Ocean View",
     "category": "Cuisine",
     "rating": 4.4,
     "price": 4.99,
-    "image": "/Restaurant_I.png"
+    "image": "/pufflequack/tiger_restaurant.png",
+    "offers": 10
   },
   {
-    "name": "Restaurant II",
-    "place": "Paris",
+    "name": "Sunflower Cafe",
+    "place": "Mountain Retreat",
     "category": "French",
     "rating": 4.6,
     "price": 6.99,
-    "image": "/Restaurant_II.png"
+    "image": "/pufflequack/sunflower_cafe.png",
+    "offers": 0
   },
   {
-    "name": "Restaurant III",
-    "place": "New York",
+    "name": "Blue Lagoon Diner",
+    "place": "City Center",
     "category": "American",
     "rating": 4.8,
     "price": 7.99,
-    "image": "/Restaurant_III.png"
+    "image": "/pufflequack/blue_lagoon_diner.png",
+    "offers": 15
   },
   {
-    "name": "Restaurant IV",
-    "place": "Tokyo",
+    "name": "Cherry Blossom Sushi",
+    "place": "Downtown Tokyo",
     "category": "Japanese",
     "rating": 4.7,
     "price": 9.99,
-    "image": "/Restaurant_IV.png"
+    "image": "/pufflequack/cherry_blossom_sushi.png",
+    "offers": 0
   },
   {
-    "name": "Restaurant V",
-    "place": "London",
+    "name": "Royal Tea House",
+    "place": "Historic London",
     "category": "British",
     "rating": 4.5,
     "price": 5.99,
-    "image": "/Restaurant_V.png"
+    "image": "/pufflequack/royal_tea_house.png",
+    "offers": 15
   },
   {
-    "name": "Restaurant VI",
-    "place": "Sydney",
+    "name": "Kangaroo Grill",
+    "place": "Sydney Bay",
     "category": "Australian",
     "rating": 4.3,
     "price": 8.99,
-    "image": "/Restaurant_VI.png"
+    "image": "/pufflequack/kangaroo_grill.png",
+    "offers": 10
   }
 ]

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Profile.css'
 
 const Profile = () => {
@@ -26,8 +27,14 @@ const Profile = () => {
     // bot.showPopup("This is just a test");
   };
 
+  const navigate = useNavigate();
+    const goBack = () => {
+      navigate(-1);
+    }
+
   return (
     <div className="profile">
+      <i class="bi-arrow-left" onClick={goBack}></i><br/><br/>
       <h3>Profile</h3><br />
       <form action="/pufflequack/profile" onSubmit={handleSubmit}>
         <label for="name" class="form-label">Name</label>
