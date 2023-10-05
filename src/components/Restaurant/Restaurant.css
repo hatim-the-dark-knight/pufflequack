@@ -1,17 +1,23 @@
+.btn-back {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+}
+
 .card {
     border: none;
     background-color: rgb(228, 230, 253);
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .card-img-top {
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .card-body {
     background-color: snow;
-    border-radius: 2rem;
+    border-radius: 1rem;
     margin-top: 1rem;
 }
 

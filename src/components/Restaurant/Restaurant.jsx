@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 import './Restaurant.css'
 import data from '../../utils/categories.json'
+import { useNavigate } from 'react-router-dom';
 
 const bot = window.Telegram.WebApp;
 
@@ -11,7 +12,7 @@ const Restaurant = (props) => {
     
     const [state, setState] = useState({
       date: '',
-      seats: 0,
+      seats: null,
       time_slot: '9am - 10am', // Set a default value
     });
   
@@ -25,15 +26,21 @@ const Restaurant = (props) => {
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      // Handle form submission, you can access the form values in 'state'
       console.log(state);
-      bot.showPopup("This is just a test");
+      alert(`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`)
+      // bot.showPopup("This is just a test");
     };
+
+    const navigate = useNavigate();
+    const goBack = () => {
+      navigate(-1);
+    }
 
   return (
     <div className="">
+      <i class="btn-back bi-arrow-left" onClick={goBack}></i>
       <div className="card">
-        <img src="/pufflequack/restaurant-i.jpg" alt="" className="card-img-top" />
+        <img src="/pufflequack/restaurant-i.jpg" alt="" className="padding-top card-img-top" />
         <div className="card-body">
           <h4 className="card-name">{name}</h4>
           <div className="top-content">

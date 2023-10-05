@@ -20,7 +20,7 @@ function App() {
     <div className="container">
       <Routes>
         <Route path="/pufflequack" element={<Home />} />
-        <Route path="/pufflequack/profile" element={<Profile />} />
+        <Route path="/pufflequack/fillProfile" element={<Profile />} />
         <Route path="/pufflequack/cuisines" element={<Cuisines />} />
         {
           data.map((item, i) => {

@@ -24,7 +24,7 @@ const Header = () => {
         <span className="location-label">
           Smart City, Kochi
         </span>
-        <Link to="/pufflequack/profile">
+        <Link to="/pufflequack/fillProfile">
           <i class="bi-person-circle"></i>
           {/* <img src="/Burger_148.png" className="profile-icon">
           </img> */}
