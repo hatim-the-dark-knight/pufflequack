@@ -29,11 +29,16 @@
 }
 
 .f-date {
-    margin-right: auto; 
+    margin-right: .75rem; 
+    flex-grow: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .f-seats {
-    margin-left: auto; 
+    margin-left: .75rem; 
+    flex-grow: 1;
+    padding-left: 1rem;
 }
 
 .f-time-slots {
@@ -59,7 +64,6 @@
 }
 
 .f-date, .f-seats::placeholder {
-    padding-left: 1rem;
     color: rgb(163, 167, 167);
 }
 

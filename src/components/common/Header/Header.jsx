@@ -10,12 +10,13 @@ const getFilteredItems = (query, items) => {
   if(!query) {
     return items;
   }
+  query = query.toLowerCase();
   return items.filter((restaurant) => restaurant.includes(query));
 }
 
 const Header = () => {
-  const [query, setQuery] = useState();
-  const filteredItems = getFilteredItems(query.toLowerCase(), restaurantNames);
+  const [query, setQuery] = useState("");
+  const filteredItems = getFilteredItems(query, restaurantNames);
   
   return (
     <div className="container">
@@ -34,7 +35,13 @@ const Header = () => {
       </div>
       <div>
         {query}
-        {filteredItems.map((i, k) => (<div key={k}> {i} </div>))}
+        {
+          filteredItems.map((item, k) => {
+            return(
+              <div key={k}> {item} </div>
+            )
+          })
+        }
       </div>
     </div>
   )

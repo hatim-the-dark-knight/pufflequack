@@ -16,10 +16,6 @@ function App() {
     bot.ready();
   });
 
-
-
-
-
   return (
     <div className="container">
       <Routes>
