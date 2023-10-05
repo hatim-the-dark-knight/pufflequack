@@ -14,7 +14,7 @@ const CuisineContent = () => {
             return(
               <Link to={`/pufflequack/${i}`} key={i} className="">
                 <div className="card">
-                  <img src="/restaurant-i.jpg" alt="" className="card-img-top" />
+                  <img src="/pufflequack/restaurant-i.jpg" alt="" className="card-img-top" />
                   <div className="card-body">
                     <h4 className="card-name">{card.name}</h4>
                     <div className="top-content">
