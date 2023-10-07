@@ -13,12 +13,6 @@
     align-items: center;
     padding: 10px 20px 10px;
   }
-  
-  /* Style the location label */
-  .location-label {
-    font-size: 18px;
-  }
-  
   /* Style the profile icon */
   .profile-icon {
     width: 32px;
@@ -28,17 +22,7 @@
   }
   
   /* Style the search bar */
-  .search-bar {
-    /* background-color: hsl(0, 0%, 87%); */
-    padding: 10px 20px;
-    
-  }
-  
-.form-input:focus{
-    background-color: rgb(247, 249, 254);
-    box-shadow: none;
-    border:none;
-}
+
 
   /* Style the search input */
   /* #location-search {

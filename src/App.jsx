@@ -8,6 +8,8 @@ import Cuisines from './components/Cuisines'
 import Restaurant from './components/Restaurant/Restaurant'
 import Profile from'./components/Profile/Profile'
 import data from './utils/categories.json'
+import TopOffers from './components/TopOffers'
+import SearchPage from './components/SearchPage/SearchPage'
 
 const bot = window.Telegram.WebApp;
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/pufflequack" element={<Home />} />
         <Route path="/pufflequack/fillProfile" element={<Profile />} />
         <Route path="/pufflequack/cuisines" element={<Cuisines />} />
+        <Route path="/pufflequack/topOffers" element={<TopOffers />} />
+        <Route path="/pufflequack/search" element={<SearchPage />} />
         {
           data.map((item, i) => {
           return(

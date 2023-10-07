@@ -8,7 +8,7 @@ const bot = window.Telegram.WebApp;
 const Restaurant = (props) => {
     const index = props.index;
     const rest_data = data[index];
-    const { name, place, category, rating, price, image } = rest_data;
+    const { name, place, category, rating, price, image, offers } = rest_data;
     
     const [state, setState] = useState({
       date: '',

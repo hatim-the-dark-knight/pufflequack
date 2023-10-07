@@ -6,7 +6,7 @@ import './Profile.css'
 const Profile = () => {
   const [state, setState] = useState({
     name: '',
-    phoneNumber: null,
+    phoneNumber: '',
     email: '', // Set a default value
     address: '',
     place: '',
@@ -40,7 +40,7 @@ const Profile = () => {
         <label for="name" class="form-label">Name</label>
         <input type="text" value={state.name} onChange={handleInputChange} class="form-control" name="name" placeholder="" required />
         <label for="phoneNumber" class="form-label">Phone Number</label>
-        <input type="tel" value={state.phoneNumber} class="form-control" id="phoneNumber" placeholder="" required />
+        <input type="tel" value={state.phoneNumber} onChange={handleInputChange} class="form-control" name="phoneNumber" placeholder="" required />
         <label for="email" class="form-label">Email</label>
         <input type="text" value={state.email} onChange={handleInputChange} class="form-control" name="email" placeholder="" required />
         <label for="address" class="form-label">Address</label>

@@ -17,6 +17,7 @@
     <script>
           function setThemeClass() {
               document.documentElement.className = Telegram.WebApp.colorScheme;
+              console.log("Theme changed");
           }
           Telegram.WebApp.onEvent('themeChanged', setThemeClass);
           setThemeClass();

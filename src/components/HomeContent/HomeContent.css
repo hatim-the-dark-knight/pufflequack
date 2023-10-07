@@ -69,4 +69,10 @@
     font-weight: 600;
     color: #31b545;
 }
-  
+
+.bottom-left {
+    position: absolute;
+    top: 47%;
+    left: 12%;
+    color: #ddd;
+}

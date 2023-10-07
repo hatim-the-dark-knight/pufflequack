@@ -2,6 +2,7 @@ import { React, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 import data from '../../../utils/categories.json'
+import SearchBar from '../../SearchBar/SearchBar'
 
 const restaurantNames = data.map((item) => item.name.toLowerCase());
 console.log(restaurantNames);
@@ -13,11 +14,18 @@ const getFilteredItems = (query, items) => {
   query = query.toLowerCase();
   return items.filter((restaurant) => restaurant.includes(query));
 }
-
 const Header = () => {
   const [query, setQuery] = useState("");
   const filteredItems = getFilteredItems(query, restaurantNames);
   
+  const onSearchBarClick= (e) => {
+    document.getElementById("drop-down-opts").classList.remove("hidden");
+  }
+  const handleChange = (event) => {
+    event.preventDefault();
+    setQuery(event.target.value);
+  };
+
   return (
     <div className="container">
       <div className="top-bar">
@@ -29,18 +37,6 @@ const Header = () => {
           {/* <img src="/Burger_148.png" className="profile-icon">
           </img> */}
         </Link>
-      </div>
-      <div className="search-bar">
-        <input type="text" onChange={e => setQuery(e.target.value)} class="form-control form-input" name="location-search" id="location-search" placeholder="Search Restaurants.." />
-      </div>
-      <div>
-        {
-          filteredItems.map((item, k) => {
-            return(
-              <div key={k}> {item} </div>
-            )
-          })
-        }
       </div>
     </div>
   )

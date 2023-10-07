@@ -7,11 +7,13 @@ const CategoryMenu = () => {
   return (
     <div className="container">
         <div className="btn-list">
-            <button className="menu-btn">
+            {/* <button className="menu-btn">
                 Near Me
-            </button>
+            </button> */}
             <button className="menu-btn">
-                Top Offers
+                <Link to="/pufflequack/topOffers">
+                    Top Offers
+                </Link>
             </button>
             <button className="menu-btn">
                 <Link to="/pufflequack/cuisines">
