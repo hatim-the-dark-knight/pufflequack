@@ -8,6 +8,8 @@ import Card from '../Card/Card';
 const bot = window.Telegram.WebApp;
 
 const Restaurant = (props) => {
+    window.scrollTo(0, 0);
+
     const index = props.index;
     const rest_data = data[index];
     const { name, place, category, rating, price, image, offers } = rest_data;
