@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Profile.css'
 import Modal from '../Modal/Modal';
 
 const Profile = () => {
-  const [state, setState] = useState({
-    name: '',
-    phoneNumber: '',
-    email: '', // Set a default value
-    address: '',
-    place: '',
-  });
+
+  const [state, setState] = useState([]);
+  useEffect(() => {
+    const state = JSON.parse(localStorage.getItem('state'));
+    console.log(state);
+    if(state) {
+      setState(state);
+    }
+  }, []);
+
+  const navigate = useNavigate();
 
   const[showModal, setShowModal] = useState(false);
 
@@ -21,6 +25,7 @@ const Profile = () => {
       ...prevState,
       [name]: value,
     }));
+    localStorage.setItem('state', JSON.stringify(state));
   };
 
   const handleSubmit = (event) => {
@@ -36,27 +41,26 @@ const Profile = () => {
     // bot.showPopup("This is just a test");
   };
 
-  const navigate = useNavigate();
   const goBack = () => {
-      navigate(-1);
+      navigate('/pufflequack');
   }
 
   return (
     <div className="profile">
       <div className="fill-profile">
-        <i class="bi-arrow-left" onClick={goBack}></i><br/><br/>
+        <i className="bi-arrow-left" onClick={goBack}></i><br/><br/>
         <h3>Profile</h3><br />
-        <form action="/pufflequack/profile" onSubmit={handleSubmit}>
-          <label for="name" class="form-label">Name</label>
-          <input type="text" value={state.name} onChange={handleInputChange} class="form-control" name="name" placeholder="" required />
-          <label for="phoneNumber" class="form-label">Phone Number</label>
-          <input type="tel" value={state.phoneNumber} onChange={handleInputChange} class="form-control" name="phoneNumber" placeholder="" required />
-          <label for="email" class="form-label">Email</label>
-          <input type="text" value={state.email} onChange={handleInputChange} class="form-control" name="email" placeholder="" required />
-          <label for="address" class="form-label">Address</label>
-          <input type="text" value={state.address} onChange={handleInputChange} class="form-control" name="address" placeholder="" required />
-          <label for="place" class="form-label">Place</label>
-          <input type="text" value={state.place} onChange={handleInputChange} class="form-control" name="place" placeholder="" required /><br/>
+        <form action="/pufflequack/profile" onSubmit={handleSubmit} autoComplete="off">
+          <label htmlFor="name" className="form-label">Name</label>
+          <input type="text" onChange={handleInputChange} className="form-control" name="name" placeholder={state.name} required />
+          <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+          <input type="tel" onChange={handleInputChange} className="form-control" name="phoneNumber" placeholder={state.phoneNumber} required />
+          <label htmlFor="email" className="form-label">Email</label>
+          <input type="text" onChange={handleInputChange} className="form-control" name="email" placeholder={state.email} required />
+          <label htmlFor="address" className="form-label">Address</label>
+          <input type="text" onChange={handleInputChange} className="form-control" name="address" placeholder={state.address} required />
+          <label htmlFor="place" className="form-label">Place</label>
+          <input type="text" onChange={handleInputChange} className="form-control" name="place" placeholder={state.place} required /><br/>
           <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button>
         </form>
       </div>

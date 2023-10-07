@@ -1,18 +1,20 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import './Restaurant.css'
 import data from '../../utils/categories.json'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Modal from '../Modal/Modal';
 import Card from '../Card/Card';
 
 const bot = window.Telegram.WebApp;
 
 const Restaurant = (props) => {
-    window.scrollTo(0, 0);
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
 
     const index = props.index;
     const rest_data = data[index];
-    const { name, place, category, rating, price, image, offers } = rest_data;
     
     let today = new Date();
     let dd = today.getDate() < 10 ? `0${today.getDate()}` : today.getDate();
@@ -49,9 +51,22 @@ const Restaurant = (props) => {
       navigate(-1);
     }
 
+    const [showMenu, setShowMenu] = useState(false);
+
+    const onClickMenu = (e) => {
+      if(!showMenu) {
+        document.getElementById("menu-img").style.width = "100%";
+        setShowMenu(true);
+      }
+      else {
+        document.getElementById("menu-img").style.width = "48%";
+        setShowMenu(false);
+      }
+    }
+
   return (
     <div className="">
-      <i class="btn-back bi-arrow-left" onClick={goBack}></i>
+      <i className="btn-back bi-arrow-left" onClick={goBack}></i>
       <Card card={rest_data} />
       {/* <div className="card">
         <img src="/pufflequack/restaurant-i.jpg" alt="" className="padding-top card-img-top" />
@@ -91,6 +106,9 @@ const Restaurant = (props) => {
         <div className="menu">
           <div className="other-content-title">
             <h4>Menu</h4>
+          </div>
+          <div className="menu-grid">
+            <img id="menu-img" onClick={onClickMenu} src="/pufflequack/menu.png" alt="" />
           </div>
         </div>
         <div className="restaurant-info">

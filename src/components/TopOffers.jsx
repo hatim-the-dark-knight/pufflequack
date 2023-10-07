@@ -11,7 +11,7 @@ const TopOffers = () => {
   }
   return (
     <>
-        <i class="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
+        <i className="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
         <Header/>
         <OffersContent/>
     </>

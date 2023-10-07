@@ -115,3 +115,12 @@
 .info-body {
     padding-left: 2rem;
 }
+
+.menu-grid{
+    padding: 10px;
+}
+
+#menu-img {
+    width: 48%;
+    cursor: pointer;
+}
