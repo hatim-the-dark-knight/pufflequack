@@ -3,6 +3,7 @@ import './Restaurant.css'
 import data from '../../utils/categories.json'
 import { useNavigate } from 'react-router-dom';
 import Modal from '../Modal/Modal';
+import Card from '../Card/Card';
 
 const bot = window.Telegram.WebApp;
 
@@ -49,7 +50,8 @@ const Restaurant = (props) => {
   return (
     <div className="">
       <i class="btn-back bi-arrow-left" onClick={goBack}></i>
-      <div className="card">
+      <Card card={rest_data} />
+      {/* <div className="card">
         <img src="/pufflequack/restaurant-i.jpg" alt="" className="padding-top card-img-top" />
         <div className="card-body">
           <h4 className="card-name">{name}</h4>
@@ -58,7 +60,7 @@ const Restaurant = (props) => {
             <div className="card-rating">{rating}</div>
           </div>
         </div>
-      </div>
+      </div> */}
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-title">
           Table Reservation for

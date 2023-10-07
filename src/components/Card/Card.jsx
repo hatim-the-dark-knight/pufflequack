@@ -15,7 +15,7 @@ const Card = (props) => {
         </div>
         <div className="bottom-content">
             <div className="card-category">{category}</div>
-            <div className="card-price">${price}</div>
+            <div className="card-price">{price}</div>
         </div>
         </div>
     </div>

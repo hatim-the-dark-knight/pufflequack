@@ -4,7 +4,7 @@
     "place": "Ocean View",
     "category": "Cuisine",
     "rating": 4.4,
-    "price": 4.99,
+    "price": "$$",
     "image": "/pufflequack/tiger_restaurant.png",
     "offers": 10
   },
@@ -13,7 +13,7 @@
     "place": "Mountain Retreat",
     "category": "French",
     "rating": 4.6,
-    "price": 6.99,
+    "price": "$$",
     "image": "/pufflequack/sunflower_cafe.png",
     "offers": 0
   },
@@ -22,7 +22,7 @@
     "place": "City Center",
     "category": "American",
     "rating": 4.8,
-    "price": 7.99,
+    "price": "$",
     "image": "/pufflequack/blue_lagoon_diner.png",
     "offers": 15
   },
@@ -31,7 +31,7 @@
     "place": "Downtown Tokyo",
     "category": "Japanese",
     "rating": 4.7,
-    "price": 9.99,
+    "price": "$$",
     "image": "/pufflequack/cherry_blossom_sushi.png",
     "offers": 0
   },
@@ -40,7 +40,7 @@
     "place": "Historic London",
     "category": "British",
     "rating": 4.5,
-    "price": 5.99,
+    "price": "$$$",
     "image": "/pufflequack/royal_tea_house.png",
     "offers": 15
   },
@@ -49,7 +49,7 @@
     "place": "Sydney Bay",
     "category": "Australian",
     "rating": 4.3,
-    "price": 8.99,
+    "price": "$$",
     "image": "/pufflequack/kangaroo_grill.png",
     "offers": 10
   }
