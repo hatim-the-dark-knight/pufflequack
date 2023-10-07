@@ -2,6 +2,7 @@ import {React, useState} from 'react'
 import './Restaurant.css'
 import data from '../../utils/categories.json'
 import { useNavigate } from 'react-router-dom';
+import Modal from '../Modal/Modal';
 
 const bot = window.Telegram.WebApp;
 
@@ -10,11 +11,18 @@ const Restaurant = (props) => {
     const rest_data = data[index];
     const { name, place, category, rating, price, image, offers } = rest_data;
     
+    let today = new Date();
+    let dd = today.getDate() < 10 ? `0${today.getDate()}` : today.getDate();
+    let mm = (today.getMonth() + 1) < 10 ? `0${today.getMonth() + 1}` : today.getMonth() + 1;
+
+    const datte = today.getFullYear() + "-" + mm + '-' + dd;
     const [state, setState] = useState({
-      date: '',
-      seats: null,
+      date: datte,
+      seats: 1,
       time_slot: '9am - 10am', // Set a default value
     });
+    console.log(state);
+    const[showModal, setShowModal] = useState(false);
   
     const handleInputChange = (event) => {
       const { name, value } = event.target;
@@ -26,8 +34,10 @@ const Restaurant = (props) => {
 
     const handleSubmit = (event) => {
       event.preventDefault();
+      setShowModal(true);
+
       console.log(state);
-      alert(`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`)
+      // alert(`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`)
       // bot.showPopup("This is just a test");
     };
 
@@ -70,8 +80,9 @@ const Restaurant = (props) => {
             <option value='3pm - 4pm'>3pm - 4pm</option>
           </select>
         </div>
-        <input type="submit" className="w-100 btn btn-primary btn-lg" value="Confirm" />
+        <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button>
       </form>
+      <Modal onClose={() => setShowModal(false)} showModal={showModal} details={state} message={`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`}/>
       <div className="other-content">
         <div className="menu">
           <div className="other-content-title">

@@ -7,10 +7,14 @@ import Card from '../Card/Card'
 import data from '../../utils/categories.json'
 
 const SearchPage = () => {
-    const location = useLocation();
-    const {query} = location.state;
-    const {item} = query;
-    console.log(query, item);
+  const location = useLocation();
+    let item;
+    if(typeof(location.state) === "string") {
+      item = location.state;
+    } else {
+      const {state} = location.state;
+      item = state;
+    }
     const filteredItems = data.filter((i) => i.name.includes(item));
 
     const navigate = useNavigate();
