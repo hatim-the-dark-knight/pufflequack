@@ -10,6 +10,7 @@ import data from './utils/categories.json'
 import TopOffers from './components/TopOffers'
 import SearchPage from './components/SearchPage/SearchPage'
 import Profile from './components/Profile/Profile'
+import Cover from './components/Cover/Cover'
 
 const bot = window.Telegram.WebApp;
 const filteredItems = data.map((restaurant) => restaurant.category).filter((value, index, self) => {
@@ -31,7 +32,7 @@ function App() {
   return (
     <div className="container">
       <Routes>
-        <Route path="/pufflequack/easydineouts" element={<Home />} />
+        <Route path="/pufflequack/" element={<Cover />} />
         <Route path="/pufflequack/easydineouts" element={<Home />} />
         <Route path="/pufflequack/easydineouts/profile" element={<Profile />} />
         <Route path="/pufflequack/easydineouts/cuisines" element={<Cuisines />} />

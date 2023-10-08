@@ -70,16 +70,6 @@ const Restaurant = (props) => {
         <i className="btn-back bi-arrow-left" onClick={goBack}></i>
         <div className="restaurant-content">
           <Card card={rest_data} />
-          {/* <div className="card">
-            <img src="/pufflequack/restaurant-i.jpg" alt="" className="padding-top card-img-top" />
-            <div className="card-body">
-              <h4 className="card-name">{name}</h4>
-              <div className="top-content">
-                <span className="card-place">{place}</span>
-                <div className="card-rating">{rating}</div>
-              </div>
-            </div>
-          </div> */}
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-title">
               Table Reservation for
@@ -88,7 +78,7 @@ const Restaurant = (props) => {
               {/* <label htmlFor='date'>Date</label> */}
               <input type="date" value={state.date} onChange={handleInputChange} name="date" className="f-date" placeholder="Today" />
               {/* <label htmlFor='seats'>No. of people</label> */}
-              <input type="number" value={state.seats} onChange={handleInputChange} name="seats" className="f-seats" placeholder="No. of seats" />
+              <input type="number" onChange={handleInputChange} name="seats" className="f-seats" placeholder="No. of seats" />
             </div>
             <div className="f-time-slots">
               <label htmlFor="time">Time Slots</label>
