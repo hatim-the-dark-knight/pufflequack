@@ -29,8 +29,8 @@
 
 .modal-body {
     padding: 10px;
-    border-top: 1px solid var(--tg-theme-secondary-bg-color);
-    border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
+    /* border-top: 1px solid var(--tg-theme-secondary-bg-color);
+    border-bottom: 1px solid var(--tg-theme-secondary-bg-color); */
     /* border-top: 1px solid var(--tg-theme-secondary-bg-color);
     border-bottom: 1px solid var(--tg-theme-secondary-bg-color); */
 }

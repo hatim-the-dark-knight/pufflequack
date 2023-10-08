@@ -13,7 +13,7 @@ const SearchBar = () => {
   const onSearchEnterPressed = (e) => {
     if (e.key === "Enter") {
         if (query) {
-            navigate('/pufflequack/search', {state: query}); // Pass query as state
+            navigate('/pufflequack/easydineouts/search', {state: query}); // Pass query as state
         } 
     }
   }
@@ -36,7 +36,7 @@ const SearchBar = () => {
           filteredItems.map((item, k) => {
             return(
               <div key={k} > 
-                <Link to="/pufflequack/search" className="dropdown-item" state={{state: item}}>
+                <Link to="/pufflequack/easydineouts/search" className="dropdown-item" state={{state: item}}>
                   {item} 
                 </Link>
               </div>

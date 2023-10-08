@@ -12,14 +12,6 @@ a {
     margin: 0 auto;
 }
 
-.content-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    /* color: rgb(225, 234, 235); */
-    color: var(--tg-theme-text-color);
-}
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

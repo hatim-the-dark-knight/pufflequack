@@ -31,21 +31,22 @@ function App() {
   return (
     <div className="container">
       <Routes>
-        <Route path="/pufflequack" element={<Home />} />
-        <Route path="/pufflequack/profile" element={<Profile />} />
-        <Route path="/pufflequack/cuisines" element={<Cuisines />} />
-        <Route path="/pufflequack/topOffers" element={<TopOffers />} />
-        <Route path="/pufflequack/search" element={<SearchPage />} />
+        <Route path="/pufflequack/easydineouts" element={<Home />} />
+        <Route path="/pufflequack/easydineouts" element={<Home />} />
+        <Route path="/pufflequack/easydineouts/profile" element={<Profile />} />
+        <Route path="/pufflequack/easydineouts/cuisines" element={<Cuisines />} />
+        <Route path="/pufflequack/easydineouts/topOffers" element={<TopOffers />} />
+        <Route path="/pufflequack/easydineouts/search" element={<SearchPage />} />
         {
           data.map((item, i) => {
           return(
-              <Route key={i} path={`/pufflequack/${i}`} element={<Restaurant index={i}/>} />
+              <Route key={i} path={`/pufflequack/easydineouts/${i}`} element={<Restaurant index={i}/>} />
           )})
         }
         {
           filteredItems.map((item, i) => {
             return(
-                <Route key={i} path={`/pufflequack/${item}`} element={<Cuisines category={item}/>} />
+                <Route key={i} path={`/pufflequack/easydineouts/${item}`} element={<Cuisines category={item}/>} />
             )})
         }
       </Routes>

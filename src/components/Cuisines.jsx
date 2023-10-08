@@ -7,7 +7,7 @@ import Category from './Category/Category'
 let category = "";
 
 const Cuisines = (props) => {
-  
+
   if(props.category === undefined) {
     category = "American";
   } else {
@@ -16,7 +16,7 @@ const Cuisines = (props) => {
 
   const navigate = useNavigate();
   const goBack = () => {
-    navigate('/pufflequack/');
+    navigate('/pufflequack/easydineouts');
   }
   return (
     <div className=''>

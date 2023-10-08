@@ -7,7 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
   
   const goBack = () => {
-    navigate('/pufflequack/profile');
+    navigate('/pufflequack/easydineouts/profile');
   }
 
   return (

@@ -42,7 +42,7 @@ const Profile = () => {
   };
 
   const goBack = () => {
-      navigate('/pufflequack/');
+      navigate('/pufflequack/easydineouts');
   }
 
   return (

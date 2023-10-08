@@ -30,7 +30,7 @@ const SearchPage = () => {
           {
             filteredItems.map((card, i) => {
               return(
-                <Link to={`/pufflequack/${i}`} key={i} className="">
+                <Link to={`/pufflequack/easydineouts/${i}`} key={i} className="">
                   <Card card={card}/>
                 </Link>
               )

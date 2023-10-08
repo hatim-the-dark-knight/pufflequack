@@ -12,7 +12,7 @@ const Content = (props) => {
       return restaurant.category === props.category;
     });
   }
-  
+
   return (
     <div className="container">
       <div className="content">
@@ -20,7 +20,7 @@ const Content = (props) => {
         {
           contentItems.map((card, i) => {
             return(
-              <Link to={`/pufflequack/${i}`} key={i} className="">
+              <Link to={`/pufflequack/easydineouts/${i}`} key={i} className="">
                 <Card card={card}/>
               </Link>
             )
