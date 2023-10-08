@@ -1,8 +1,79 @@
-# React + Vite
+# easydineouts  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## To run easydineouts
 
-Currently, two official plugins are available:
+### Install node  
+> https://nodejs.org/en/download  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Check if node is installed  
+```bash
+node --version
+```
+```bash 
+npm --version
+```  
+
+### Install yarn  
+```bash 
+npm install --global yarn
+```  
+
+#### Check if yarn is installed  
+```bash 
+yarn --version
+```  
+
+### Install git
+> https://git-scm.com/download/win  
+
+#### Check if git is installed  
+```bash 
+git --version
+```  
+
+### Clone this project
+```bash 
+git clone https://github.com/hatim-the-dark-knight/pufflequack.git
+```  
+
+#### Change directory to where the _public_ and _src_ folders are stored 
+```bash 
+cd pufflequack
+```  
+
+### Install dependencies
+```bash
+yarn
+```  
+
+### Now, to run the project
+```bash
+yarn run dev
+```
+
+## To create a new project similar to this  
+
+### Create a new project  
+```bash
+yarn create vite
+```  
+> Okay to proceed? y  
+> Project name -> name-of-your-project  
+> Select a framework -> React  
+> Select javascript  
+> Project name-of-your-project is created  
+
+#### Change directory to where the _public_ and _src_ folders are stored 
+```bash 
+cd pufflequack
+```  
+
+### Install dependencies
+```bash
+yarn
+```  
+
+### Run the project
+```bash
+yarn run dev
+```  
