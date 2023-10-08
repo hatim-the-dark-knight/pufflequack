@@ -1,6 +1,6 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Link, Route, Routes } from "react-router-dom"
+import { Link, Route, Routes, useNavigate } from "react-router-dom"
 import React from 'react'
 import { useEffect } from 'react'
 import Home from './components/Home'
@@ -12,10 +12,17 @@ import SearchPage from './components/SearchPage/SearchPage'
 import Profile from './components/Profile/Profile'
 
 const bot = window.Telegram.WebApp;
+const navigate = useNavigate();
+    
 
 function App() {
+  const goBack = () => {
+    navigate(-1);
+  }
+
   useEffect(() => {
     bot.ready();
+    bot.BackButton.onClick(goBack);
     bot.BackButton.show();
   }, []);
 
