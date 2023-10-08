@@ -3,22 +3,15 @@
 .btn-list {
     display: flex;
     padding: 10px 20px;
-    justify-content: space-between;
 }
   
 .menu-btn {
     /* Your button styles here */
-    flex-basis: 50px;
-    height: 75px; /* Adjust padding as needed */
-    margin: 5px;
-    border: none;
-    border-radius: 1rem;
+    padding: 40px 20px; /* Adjust padding as needed */
+    margin: 5px; /* Adjust margin as needed */
+
     flex-grow: 1;
-    /* text-align: end; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.menu-link {
-    color: black;
-}
-
   

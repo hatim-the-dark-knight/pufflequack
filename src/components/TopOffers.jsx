@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import CuisineContent from './CuisineContent/CuisineContent'
 import Header from './common/Header/Header'
 import OffersContent from './OffersContent/OffersContent'
 
