@@ -1,5 +1,30 @@
 # easydineouts  
 
+## About  
+### "easydineouts" - A Quick Table Reservation Solution  
+
+Looking to plan a delightful dining experience? EasyDineout, our user-friendly Telegram web app, simplifies restaurant reservations with a seamless interface. Here’s what you can do on Easy Dineout:
+
+1. *Explore Popular Restaurants:*
+   Browse through a curated list of popular restaurants nearby, showcasing their overall ratings and price ranges for a quick overview.
+
+2. *Detailed Restaurant Profiles:*
+   Dive into comprehensive restaurant profiles, presenting full menu details, easily expandable for better viewing. Discover opening and closing times, cuisine categories, and additional facilities like parking and card payments.
+
+3. *Create Your Profile:*
+   Input your profile details, including address and phone number, in the designated profile section. This information streamlines the reservation process for a hassle-free experience.
+
+4. *Effortless Restaurant Search:*
+   Utilize the search bar to swiftly find your favorite restaurants, making the decision-making process a breeze.
+
+5. *Smart Filtering Options:*
+   Narrow down your restaurant choices by filtering based on cuisine preferences and flat discount offers on various menu items.
+
+6. *Table Reservations Made Easy:*
+   Reserve a table at your chosen restaurant effortlessly by specifying the date, number of guests, and available time slots. Enjoy a savory delight with your loved ones.
+
+Book your table now and savor a delightful dining experience with EasyDineout!
+
 ## To run easydineouts
 
 ### Install node  
