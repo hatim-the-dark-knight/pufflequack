@@ -22,26 +22,31 @@
     color: var(--tg-theme-text-color);
 }
 
-.f-date, .f-seats {
-    width: 200px;
-    height: 40px;
+.top-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.f-date, .f-seats {
+    width: 50%;
+    height: 40px;
+    border: none;
     border-radius: 5px;
+    appearance: none;
 }
 
 .f-date {
     margin-right: .75rem; 
-    flex-grow: 1;
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
 .f-seats {
-    margin-left: .75rem; 
-    flex-grow: 1;
+    margin-left: .75rem;
     padding-left: 1rem;
+}
+
+.f-seats::-webkit-outer-spin-button, .f-seats::-webkit-inner-spin-button  {
+    -webkit-appearance: none;
 }
 
 .f-time-slots {
@@ -91,7 +96,7 @@
     padding: 5px 10px;
     /* color: black;
     background-color: rgb(228, 228, 228); */
-    border-left: 5px solid var(--tg-theme-hint-color);
+    border-bottom: 5px solid var(--tg-theme-hint-color);
     color: var(--tg-theme-bg-color);
     background-color: var(--tg-theme-text-color);
 }
