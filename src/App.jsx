@@ -16,7 +16,8 @@ const bot = window.Telegram.WebApp;
 function App() {
   useEffect(() => {
     bot.ready();
-  });
+    bot.BackButton.show();
+  }, []);
 
   return (
     <div className="container">
