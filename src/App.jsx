@@ -25,7 +25,9 @@ function App() {
 
   useEffect(() => {
     bot.ready();
+    bot.expand();
     bot.BackButton.onClick(goBack);
+    bot.enableClosingConfirmation();
     bot.BackButton.show();
   }, []);
 
