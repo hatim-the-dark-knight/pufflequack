@@ -23,22 +23,22 @@ const SearchPage = () => {
     }
     return (
     <div>
-        <i className="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
-    <div className="container">
-       <div className="content">
-        <div className="card-grid">
-        {
-          filteredItems.map((card, i) => {
-            return(
-              <Link to={`/pufflequack/${i}`} key={i} className="">
-                <Card card={card}/>
-              </Link>
-            )
-          })
-        }
+      <i className="btn-back bi-arrow-left" onClick={goBack}></i>
+      <div className="container">
+        <div className="content">
+          <div className="card-grid">
+          {
+            filteredItems.map((card, i) => {
+              return(
+                <Link to={`/pufflequack/${i}`} key={i} className="">
+                  <Card card={card}/>
+                </Link>
+              )
+            })
+          }
+          </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }

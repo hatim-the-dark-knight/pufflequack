@@ -7,16 +7,16 @@ const CategoryMenu = () => {
   return (
     <div className="cm-container">
         <div className="btn-list">
-            <button className="menu-btn">
-                <Link to="/pufflequack/topOffers" className="menu-link">
+            <Link to="/pufflequack/topOffers" className="menu-link">
+                <button   on className="menu-btn">
                     Top Offers
-                </Link>
-            </button>
-            <button className="menu-btn">
-                <Link to="/pufflequack/cuisines" className="menu-link">
+                </button>
+            </Link>
+            <Link to="/pufflequack/cuisines" className="menu-link">
+                <button className="menu-btn">
                     Cuisines
-                </Link>
-            </button>
+                </button>
+            </Link>
         </div>
     </div>
   )

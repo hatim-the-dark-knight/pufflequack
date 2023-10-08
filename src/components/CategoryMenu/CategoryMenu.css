@@ -1,19 +1,23 @@
 .btn-list {
     display: flex;
-    padding: 10px 0px;
+    padding: 10px 5px;
     justify-content: space-between;
-}
-  
-.menu-btn {
-    flex-basis: 50px;
-    height: 75px; /* Adjust padding as needed */
-    margin: 5px;
-    border: none;
-    border-radius: 1rem;
-    flex-grow: 1;
 }
 
 .menu-link {
-    color: black;
+    display: flex;
+    flex-grow: 1;
+    /* color: rgb(11, 2, 78); */
+    color: var(--tg-theme-button-text-color);
+    
 }
   
+.menu-btn {
+    height: 75px;
+    margin: 5px;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    /* background-color: rgb(247, 231, 8); */
+    background-color: var(--tg-theme-button-color);
+} 

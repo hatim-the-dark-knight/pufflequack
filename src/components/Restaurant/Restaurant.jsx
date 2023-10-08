@@ -65,82 +65,90 @@ const Restaurant = (props) => {
     }
 
   return (
-    <div className="">
-      <i className="btn-back bi-arrow-left" onClick={goBack}></i>
-      <Card card={rest_data} />
-      {/* <div className="card">
-        <img src="/pufflequack/restaurant-i.jpg" alt="" className="padding-top card-img-top" />
-        <div className="card-body">
-          <h4 className="card-name">{name}</h4>
-          <div className="top-content">
-            <span className="card-place">{place}</span>
-            <div className="card-rating">{rating}</div>
-          </div>
-        </div>
-      </div> */}
-      <form className="form" onSubmit={handleSubmit}>
-        <div className="form-title">
-          Table Reservation for
-        </div>
-        <div className="top-content">
-          <input type="date" value={state.date} onChange={handleInputChange} name="date" className="f-date" placeholder="Today" />
-          <input type="number" value={state.seats} onChange={handleInputChange} name="seats" className="f-seats" placeholder="No. of seats" />
-        </div>
-        <div className="f-time-slots">
-          <label htmlFor="time">Time Slots Available</label>
-          <select name="time_slot" value={state.time_slot} onChange={handleInputChange} className="f-time-slots-opts">
-            <option value='9am - 10am'>9am - 10am</option>
-            <option value='10am - 11am'>10am - 11am</option>
-            <option value='11am - 12pm'>11am - 12pm</option>
-            <option value='12pm - 1pm'>12pm - 1pm</option>
-            <option value='12pm - 1pm'>12pm - 1pm</option>
-            <option value='1pm - 2pm'>1pm - 2pm</option>
-            <option value='2pm - 3pm'>2pm - 3pm</option>
-            <option value='3pm - 4pm'>3pm - 4pm</option>
-          </select>
-        </div>
-        <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button>
-      </form>
-      <Modal onClose={() => setShowModal(false)} showModal={showModal} details={state} message={`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`}/>
-      <div className="other-content">
-        <div className="menu">
-          <div className="other-content-title">
-            <h4>Menu</h4>
-          </div>
-          <div className="menu-grid">
-            <img id="menu-img" onClick={onClickMenu} src="/pufflequack/menu.png" alt="" />
-          </div>
-        </div>
-        <div className="restaurant-info">
-          <div className="other-content-title">
-            <h4>Restaurant Info</h4></div>
-            <div className="info-body">
-                ABC Valley, <br/>
-                Funzone, <br/>
-                India <br/>
-                Open from 9 am to 10 pm
+    <div className="r-container">
+      <div>
+        <i className="btn-back bi-arrow-left" onClick={goBack}></i>
+        <div className="restaurant-content">
+          <Card card={rest_data} />
+          {/* <div className="card">
+            <img src="/pufflequack/restaurant-i.jpg" alt="" className="padding-top card-img-top" />
+            <div className="card-body">
+              <h4 className="card-name">{name}</h4>
+              <div className="top-content">
+                <span className="card-place">{place}</span>
+                <div className="card-rating">{rating}</div>
+              </div>
             </div>
-          
-        </div>
-        <div className="features">
-          <div className="other-content-title">
-            <h4>Features</h4>
-          </div>
-          <div className="features-body">
-            <ul>
-              <li>
-                Parking available
-              </li>
-              <li>
-                Accepts card payment
-              </li>
-              <li>
-                AC available
-              </li>
-            </ul>
+          </div> */}
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="form-title">
+              Table Reservation for
+            </div>
+            <div className="top-content">
+              {/* <label htmlFor='date'>Date</label> */}
+              <input type="date" value={state.date} onChange={handleInputChange} name="date" className="f-date" placeholder="Today" />
+              {/* <label htmlFor='seats'>No. of people</label> */}
+              <input type="number" value={state.seats} onChange={handleInputChange} name="seats" className="f-seats" placeholder="No. of seats" />
+            </div>
+            <div className="f-time-slots">
+              <label htmlFor="time">Time Slots Available</label>
+              <select name="time_slot" value={state.time_slot} onChange={handleInputChange} className="f-time-slots-opts">
+                <option value='9am - 10am'>9am - 10am</option>
+                <option value='10am - 11am'>10am - 11am</option>
+                <option value='11am - 12pm'>11am - 12pm</option>
+                <option value='12pm - 1pm'>12pm - 1pm</option>
+                <option value='12pm - 1pm'>12pm - 1pm</option>
+                <option value='1pm - 2pm'>1pm - 2pm</option>
+                <option value='2pm - 3pm'>2pm - 3pm</option>
+                <option value='3pm - 4pm'>3pm - 4pm</option>
+              </select>
+            </div>
+            <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button>
+          </form>
+          <Modal onClose={() => setShowModal(false)} showModal={showModal} details={state} message={`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`}/>
+          <div className="other-content">
+            <div className="menu">
+              <h4 className="other-content-title">
+                Menu
+              </h4>
+              <div className="menu-grid">
+                <img id="menu-img" onClick={onClickMenu} src="/pufflequack/menu.png" alt="" />
+              </div>
+            </div>
+            <div className="restaurant-info">
+              <h4 className="other-content-title">
+                Restaurant Info
+              </h4>
+              <div className="info-body">
+                  ABC Valley, <br/>
+                  Funzone, <br/>
+                  India <br/>
+                  Open from 9 am to 10 pm
+              </div>
+              
+            </div>
+            <div className="features">
+              <h4 className="other-content-title">
+                Features
+              </h4>
+              <div className="features-body">
+                <ul>
+                  <li>
+                    Parking available
+                  </li>
+                  <li>
+                    Accepts card payment
+                  </li>
+                  <li>
+                    AC available
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
   )
 }

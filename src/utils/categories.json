@@ -5,7 +5,7 @@
     "category": "Cuisine",
     "rating": 4.4,
     "price": "$$",
-    "image": "/pufflequack/tiger_restaurant.png",
+    "image": "/pufflequack/restaurant-i.jpg",
     "offers": 10
   },
   {
@@ -14,7 +14,7 @@
     "category": "French",
     "rating": 4.6,
     "price": "$$",
-    "image": "/pufflequack/sunflower_cafe.png",
+    "image": "/pufflequack/restaurant-i.jpg",
     "offers": 0
   },
   {
@@ -23,7 +23,7 @@
     "category": "American",
     "rating": 4.8,
     "price": "$",
-    "image": "/pufflequack/blue_lagoon_diner.png",
+    "image": "/pufflequack/restaurant-i.jpg",
     "offers": 15
   },
   {
@@ -32,7 +32,7 @@
     "category": "Japanese",
     "rating": 4.7,
     "price": "$$",
-    "image": "/pufflequack/cherry_blossom_sushi.png",
+    "image": "/pufflequack/restaurant-i.jpg",
     "offers": 0
   },
   {
@@ -41,7 +41,7 @@
     "category": "British",
     "rating": 4.5,
     "price": "$$$",
-    "image": "/pufflequack/royal_tea_house.png",
+    "image": "/pufflequack/restaurant-i.jpg",
     "offers": 15
   },
   {
@@ -50,7 +50,7 @@
     "category": "Australian",
     "rating": 4.3,
     "price": "$$",
-    "image": "/pufflequack/kangaroo_grill.png",
+    "image": "/pufflequack/restaurant-i.jpg",
     "offers": 10
   }
 ]

@@ -1,4 +1,17 @@
-.home {
+#root {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: black;
+    color: white; */
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+
+.btn-back {
+    padding: 10px;
 }

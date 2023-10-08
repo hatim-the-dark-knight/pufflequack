@@ -7,7 +7,7 @@ import '../App.css'
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className=''>
         <Header/>
         <SearchBar/>
         <CategoryMenu/>

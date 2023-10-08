@@ -4,3 +4,8 @@
   align-items: center;
   padding: 10px;
 }
+
+.location-label {
+  /* color: white; */
+  color: var(--tg-theme-text-color);
+}

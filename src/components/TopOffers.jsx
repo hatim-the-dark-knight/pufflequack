@@ -8,10 +8,10 @@ const TopOffers = () => {
     navigate(-1);
   }
   return (
-    <>
-        <i className="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
+    <div className=''>
+        <i className="btn-back bi-arrow-left" onClick={goBack}></i>
         <Content title="Top Offers"/>
-    </>
+    </div>
   )
 }
 
