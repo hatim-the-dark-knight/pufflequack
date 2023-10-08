@@ -11,7 +11,10 @@ const Home = () => {
         <Header/>
         <SearchBar/>
         <CategoryMenu/>
-        <Content title="Popular Restaurants"/>
+        <div className="content-title">
+          Popular Restaurants
+        </div>
+        <Content category=""/>
     </div>
   )
 }

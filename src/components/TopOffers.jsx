@@ -10,7 +10,10 @@ const TopOffers = () => {
   return (
     <div className=''>
         <i className="btn-back bi-arrow-left" onClick={goBack}></i>
-        <Content title="Top Offers"/>
+        <div className="content-title">
+          Top Offers
+        </div>
+        <Content category=""/>
     </div>
   )
 }

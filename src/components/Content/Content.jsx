@@ -5,15 +5,20 @@ import data from '../../utils/categories.json'
 import Card from '../Card/Card'
 
 const Content = (props) => {
+
+  let contentItems = data;
+  if(props.category !== "") {
+    contentItems = data.filter((restaurant) => {
+      return restaurant.category === props.category;
+    });
+  }
+  
   return (
     <div className="container">
       <div className="content">
-        <div className="content-title">
-          {props.title}
-        </div>
         <div className="card-grid">
         {
-          data.map((card, i) => {
+          contentItems.map((card, i) => {
             return(
               <Link to={`/pufflequack/${i}`} key={i} className="">
                 <Card card={card}/>

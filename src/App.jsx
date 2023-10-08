@@ -12,8 +12,9 @@ import SearchPage from './components/SearchPage/SearchPage'
 import Profile from './components/Profile/Profile'
 
 const bot = window.Telegram.WebApp;
-
-    
+const filteredItems = data.map((restaurant) => restaurant.category).filter((value, index, self) => {
+  return self.indexOf(value) === index;
+});
 
 function App() {
   const navigate = useNavigate();
@@ -40,6 +41,12 @@ function App() {
           return(
               <Route key={i} path={`/pufflequack/${i}`} element={<Restaurant index={i}/>} />
           )})
+        }
+        {
+          filteredItems.map((item, i) => {
+            return(
+                <Route key={i} path={`/pufflequack/${item}`} element={<Cuisines category={item}/>} />
+            )})
         }
       </Routes>
     </div>

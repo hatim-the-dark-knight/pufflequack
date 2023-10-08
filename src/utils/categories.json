@@ -2,11 +2,12 @@
   {
     "name": "Tiger Restaurant",
     "place": "Ocean View",
-    "category": "Cuisine",
+    "category": "American",
     "rating": 4.4,
-    "price": "$$",
+    "price": "$$$",
     "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 10
+    "offers": 10,
+    "menu": "/pufflequack/menu.png"
   },
   {
     "name": "Sunflower Cafe",
@@ -15,7 +16,8 @@
     "rating": 4.6,
     "price": "$$",
     "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 0
+    "offers": 0,
+    "menu": "/pufflequack/menu.png"
   },
   {
     "name": "Blue Lagoon Diner",
@@ -24,7 +26,8 @@
     "rating": 4.8,
     "price": "$",
     "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 15
+    "offers": 15,
+    "menu": "/pufflequack/menu.png"
   },
   {
     "name": "Cherry Blossom Sushi",
@@ -33,24 +36,27 @@
     "rating": 4.7,
     "price": "$$",
     "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 0
+    "offers": 0,
+    "menu": "/pufflequack/menu.png"
   },
   {
     "name": "Royal Tea House",
     "place": "Historic London",
-    "category": "British",
+    "category": "French",
     "rating": 4.5,
     "price": "$$$",
     "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 15
+    "offers": 15,
+    "menu": "/pufflequack/menu.png"
   },
   {
     "name": "Kangaroo Grill",
     "place": "Sydney Bay",
-    "category": "Australian",
+    "category": "Japanese",
     "rating": 4.3,
     "price": "$$",
     "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 10
+    "offers": 10,
+    "menu": "/pufflequack/menu.png"
   }
 ]

@@ -2,7 +2,7 @@ import React from 'react'
 import './Card.css'
 
 const Card = (props) => {
-    const { name, place, category, rating, price, image, offers } = props.card;
+    const { name, place, category, rating, price, image, offers, menu } = props.card;
   return (
     <div className="card">
         <img src={image} alt="" className="card-img-top" />
