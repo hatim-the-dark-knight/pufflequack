@@ -1,17 +1,4 @@
-/* .flexCenter {
-    display: flex;
-    row-gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.home {
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
 }
-
-.paddings {
-    padding: 1.5rem;
-}
-
-.h-menu {
-    font-size: 16px;
-    font-weight: 500;
-    gap: 2rem;
-} */
