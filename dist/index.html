@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PuffleQuack</title>
+    <script src="https://tg.dev/js/telegram-web-app.js"></script>
+    <script>
+          function setThemeClass() {
+            document.documentElement.className = "dark";
+            console.log("Theme changed", document.documentElement.className, Telegram.WebApp.colorScheme);
+          }
+          Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+          setThemeClass();
+	  </script>
+    <script type="module" crossorigin src="/pufflequack/assets/index-d0b23845.js"></script>
+    <link rel="stylesheet" href="/pufflequack/assets/index-d6841dc6.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>

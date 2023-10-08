@@ -5,18 +5,15 @@ import { Link, Route, Routes } from "react-router-dom"
 
 const CategoryMenu = () => {
   return (
-    <div className="container">
+    <div className="cm-container">
         <div className="btn-list">
-            {/* <button className="menu-btn">
-                Near Me
-            </button> */}
             <button className="menu-btn">
-                <Link to="/pufflequack/topOffers">
-                    Top Offers
+                <Link to="/pufflequack/topOffers" className='menu-link'>
+                    &nbsp;&nbsp;Top Offers
                 </Link>
             </button>
             <button className="menu-btn">
-                <Link to="/pufflequack/cuisines">
+                <Link to="/pufflequack/cuisines" className='menu-link'>
                     Cuisines
                 </Link>
             </button>

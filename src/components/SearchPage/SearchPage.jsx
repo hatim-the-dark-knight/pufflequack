@@ -23,7 +23,7 @@ const SearchPage = () => {
     }
     return (
     <div>
-        <i class="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
+        <i className="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
     <div className="container">
        <div className="content">
         <div className="card-grid">
