@@ -91,7 +91,7 @@ const Restaurant = (props) => {
               <input type="number" value={state.seats} onChange={handleInputChange} name="seats" className="f-seats" placeholder="No. of seats" />
             </div>
             <div className="f-time-slots">
-              <label htmlFor="time">Time Slots Available</label>
+              <label htmlFor="time">Time Slots</label>
               <select name="time_slot" value={state.time_slot} onChange={handleInputChange} className="f-time-slots-opts">
                 <option value='9am - 10am'>9am - 10am</option>
                 <option value='10am - 11am'>10am - 11am</option>
