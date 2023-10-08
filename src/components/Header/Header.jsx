@@ -14,6 +14,7 @@ const Header = () => {
     <div className="h-container">
       <div className="top-bar">
         <span className="location-label">
+          <i className='bi-geo-alt-fill'></i>&nbsp;
           Smart City, Kochi
         </span>
         <i className="bi-person-circle" onClick={goBack}></i>
