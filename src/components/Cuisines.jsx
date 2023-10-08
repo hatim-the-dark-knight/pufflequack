@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import CuisineContent from './CuisineContent/CuisineContent'
-import Header from './common/Header/Header'
+import Header from './Header/Header'
+import Content from './Content/Content'
 
 const Cuisines = () => {
   const navigate = useNavigate();
@@ -11,12 +11,9 @@ const Cuisines = () => {
   return (
     <>
         <i className="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
-        <Header/>
-        <CuisineContent/>
+        <Content title="Cuisines"/>
     </>
   )
 }
 
 export default Cuisines
-
-

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
-import data from '../../../utils/categories.json'
 
 const Header = () => {
   return (

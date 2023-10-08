@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './common/Header/Header'
+import Header from './Header/Header'
 import CategoryMenu from './CategoryMenu/CategoryMenu'
-import HomeContent from './HomeContent/HomeContent'
 import SearchBar from './SearchBar/SearchBar'
+import Content from './Content/Content'
 import '../App.css'
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
         <Header/>
         <SearchBar/>
         <CategoryMenu/>
-        <HomeContent/>
+        <Content title="Popular Restaurants"/>
     </div>
   )
 }

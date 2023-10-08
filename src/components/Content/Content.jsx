@@ -1,19 +1,19 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './OffersContent.css'
+import './Content.css'
+import data from '../../utils/categories.json'
 import Card from '../Card/Card'
 
-import data from '../../utils/categories.json'
-
-const offerRestaurants = data.filter((restaurant) => (restaurant.offers != 0));
-
-const OffersContent = () => {
+const Content = (props) => {
   return (
     <div className="container">
-       <div className="content">
+      <div className="content">
+        <div className="content-title">
+          {props.title}
+        </div>
         <div className="card-grid">
         {
-          offerRestaurants.map((card, i) => {
+          data.map((card, i) => {
             return(
               <Link to={`/pufflequack/${i}`} key={i} className="">
                 <Card card={card}/>
@@ -27,4 +27,6 @@ const OffersContent = () => {
   )
 }
 
-export default OffersContent
+export default Content
+
+

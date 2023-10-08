@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Header from './common/Header/Header'
-import OffersContent from './OffersContent/OffersContent'
+import Content from './Content/Content'
 
 const TopOffers = () => {
   const navigate = useNavigate();
@@ -11,8 +10,7 @@ const TopOffers = () => {
   return (
     <>
         <i className="back-btn bi-arrow-left" style={{paddingLeft: '2rem'}} onClick={goBack}></i>
-        <Header/>
-        <OffersContent/>
+        <Content title="Top Offers"/>
     </>
   )
 }
