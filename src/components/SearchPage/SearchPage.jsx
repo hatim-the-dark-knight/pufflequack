@@ -22,7 +22,7 @@ const SearchPage = () => {
         navigate(-1);
     }
     return (
-    <div>
+    <div className='search-page'>
       <i className="btn-back bi-arrow-left" onClick={goBack}></i>
       <div className="container">
         <div className="content">

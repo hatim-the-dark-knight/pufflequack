@@ -4,10 +4,9 @@
     "place": "Ocean View",
     "category": "American",
     "rating": 4.4,
-    "price": "$$$",
-    "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 10,
-    "menu": "/pufflequack/menu.png"
+    "price": "$$",
+    "image": "/pufflequack/tiger_restaurant.jpeg",
+    "offers": 0
   },
   {
     "name": "Sunflower Cafe",
@@ -15,9 +14,8 @@
     "category": "French",
     "rating": 4.6,
     "price": "$$",
-    "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 0,
-    "menu": "/pufflequack/menu.png"
+    "image": "/pufflequack/sunflower_cafe.jpeg",
+    "offers": 10
   },
   {
     "name": "Blue Lagoon Diner",
@@ -25,9 +23,8 @@
     "category": "American",
     "rating": 4.8,
     "price": "$",
-    "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 15,
-    "menu": "/pufflequack/menu.png"
+    "image": "/pufflequack/blue_lagoon_diner.jpeg",
+    "offers": 15
   },
   {
     "name": "Cherry Blossom Sushi",
@@ -35,19 +32,17 @@
     "category": "Japanese",
     "rating": 4.7,
     "price": "$$",
-    "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 0,
-    "menu": "/pufflequack/menu.png"
+    "image": "/pufflequack/cherry_blossom_sushi.jpeg",
+    "offers": 0
   },
   {
     "name": "Royal Tea House",
     "place": "Historic London",
-    "category": "French",
+    "category": "American",
     "rating": 4.5,
     "price": "$$$",
-    "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 15,
-    "menu": "/pufflequack/menu.png"
+    "image": "/pufflequack/royal_tea_house.jpeg",
+    "offers": 15
   },
   {
     "name": "Kangaroo Grill",
@@ -55,8 +50,7 @@
     "category": "Japanese",
     "rating": 4.3,
     "price": "$$",
-    "image": "/pufflequack/restaurant-i.jpg",
-    "offers": 10,
-    "menu": "/pufflequack/menu.png"
+    "image": "/pufflequack/kangaroo_grill.jpeg",
+    "offers": 10
   }
 ]
