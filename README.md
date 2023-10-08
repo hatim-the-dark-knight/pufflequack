@@ -510,6 +510,22 @@ The component utilizes React hooks to manage state:
 
 - Filters unique categories from the provided restaurant data and maps them to buttons for navigation.
 
+## Easy Dineout Web App - Potential Errors and Exceptions
+
+While the Easy Dineout web app functions smoothly based on the provided code, there are potential errors and exceptions that users or developers might encounter during usage or development.  
+1. *Server Errors*
+2. *Navigation Errors*
+3. *Data Fetching Errors*
+4. *State Management Errors*
+5. *Form Submission Errors*
+6. *Component Loading Errors*
+7. *Compatibility Issues*
+8. *Search Functionality Errors*
+9. *UI/UX Inconsistencies*
+10. *Dependency Version Conflicts*
+
+Addressing and mitigating these potential errors and exceptions will contribute to a smoother and more reliable user experience with the Easy Dineout web app.
+
 ## Deployment  
 
 The deployment was done using GitHub Actions.  
