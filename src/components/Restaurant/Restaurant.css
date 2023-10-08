@@ -93,7 +93,7 @@
 }
 
 .other-content-title {
-    padding: 5px 10px;
+    padding: 5px 0px;
     /* color: black;
     background-color: rgb(228, 228, 228); */
     border-bottom: 5px solid var(--tg-theme-hint-color);

@@ -9,3 +9,7 @@
   /* color: white; */
   color: var(--tg-theme-text-color);
 }
+
+.bi-person-circle {
+  cursor: pointer;
+}

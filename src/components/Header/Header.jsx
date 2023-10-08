@@ -1,17 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
+
+  const navigate = useNavigate();
+  
+  const goBack = () => {
+    navigate('/pufflequack/profile');
+  }
+
   return (
     <div className="h-container">
       <div className="top-bar">
         <span className="location-label">
           Smart City, Kochi
         </span>
-        <Link to="/pufflequack/profile">
-          <i className="bi-person-circle"></i>
-        </Link>
+        <i className="bi-person-circle" onClick={goBack}></i>
       </div>
     </div>
   )
