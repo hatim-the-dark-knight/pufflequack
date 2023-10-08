@@ -1,17 +1,19 @@
-/* In your CategoryMenu.css or your main stylesheet */
-
 .btn-list {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 0px;
+    justify-content: space-between;
 }
   
 .menu-btn {
-    /* Your button styles here */
-    padding: 40px 20px; /* Adjust padding as needed */
-    margin: 5px; /* Adjust margin as needed */
-
+    flex-basis: 50px;
+    height: 75px; /* Adjust padding as needed */
+    margin: 5px;
+    border: none;
+    border-radius: 1rem;
     flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+
+.menu-link {
+    color: black;
 }
   

@@ -1,13 +1,11 @@
 .search-bar {
-    /* background-color: hsl(0, 0%, 87%); */
     position: relative;
+    padding: 5px 10px;
 }
 
-
-
 #drop-down-opts {
-  padding: 1px 15px;
-  background-color: rgb(244, 244, 244);
+  padding: 5px 15px;
+  background-color: snow;
   color: black;
   position: absolute;
   width: 100%;
@@ -15,14 +13,14 @@
   border-radius: .25rem;
 }
 
-.dropdown-item:focus {
-  color: rgb(1, 1, 137);
+.dropdown-item {
+  color: black;
+  padding: 2px 0px;
 }
-  
-.form-input:focus{
-    background-color: rgb(247, 249, 254);
-    box-shadow: none;
-    border:none;
+
+.dropdown-item:hover{ 
+  color: rgb(36, 36, 112);
+  border-bottom: 1px solid rgb(207, 207, 207) ;
 }
 
 .hidden {
