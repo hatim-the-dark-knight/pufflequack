@@ -9,8 +9,8 @@ const message = props.message;
     }
     return(
         <div className="modal">
-            <div className="modal-content">
-                <div className="modal-header">
+            <div className="m-content">
+                <div className="m-header">
                     <h4 className="modal-title">
                         Success
                     </h4>
@@ -18,7 +18,7 @@ const message = props.message;
                 <div className="modal-body">
                     {message}
                 </div>
-                <div className="modal-footer">
+                <div className="m-footer">
                     <button onClick={props.onClose} className="btn btn-secondary">Close</button>
                 </div>
             </div>
