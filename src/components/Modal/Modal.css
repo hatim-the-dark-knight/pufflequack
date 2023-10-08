@@ -20,11 +20,11 @@
 }
 
 .m-header, .m-footer {
-    padding: 20px 25px;
+    padding: px 25px;
 }
 
 .m-header {
-    background-color: var(--tg-theme-secondary-bg-color);
+    background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
 }
 
@@ -42,6 +42,6 @@
 }
 
 .btn {
-    background-color: var(--tg-theme-secondary-bg-color);
+    background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
 }
