@@ -12,10 +12,11 @@ import SearchPage from './components/SearchPage/SearchPage'
 import Profile from './components/Profile/Profile'
 
 const bot = window.Telegram.WebApp;
-const navigate = useNavigate();
+
     
 
 function App() {
+  const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
   }
