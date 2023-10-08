@@ -22,14 +22,13 @@
     <script src="https://tg.dev/js/telegram-web-app.js"></script>
     <script>
           function setThemeClass() {
-            document.documentElement.className = "dark";
-            console.log("Theme changed", document.documentElement.className, Telegram.WebApp.colorScheme);
+            document.documentElement.className = Telegram.WebApp.colorScheme;
           }
           Telegram.WebApp.onEvent('themeChanged', setThemeClass);
           setThemeClass();
 	  </script>
-    <script type="module" crossorigin src="/pufflequack/assets/index-72a34e43.js"></script>
-    <link rel="stylesheet" href="/pufflequack/assets/index-117f8ae8.css">
+    <script type="module" crossorigin src="/pufflequack/assets/index-f536ba2e.js"></script>
+    <link rel="stylesheet" href="/pufflequack/assets/index-68d1ca12.css">
   </head>
   <body>
     <div id="root"></div>
