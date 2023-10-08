@@ -1,0 +1,15 @@
+.cover {
+    background-color: var(--tg-theme-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cover-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--tg-theme-text-color);
+}
+  
