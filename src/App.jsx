@@ -34,6 +34,7 @@ function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const goBack = () => {
+    bot.MainButton.hide();
     getBackPath(location.pathname);
     if(backPath === "") {
       navigate(-1);
@@ -44,10 +45,10 @@ function App() {
       navigate(backPath);
       if(backPath === "/pufflequack/easydineouts") {
         bot.BackButton.hide();
-        bot.showPopup("Error", "Cannot navigate back", [{"type": "close"}]);
+        bot.showAlert("Cannot navigate back");
       } else {
         bot.BackButton.show();
-        bot.showPopup("Success", "Can navigate back", [{"type": "close"}]);
+        bot.showAlert("Can navigate back");
       }
     }
   }
@@ -56,6 +57,7 @@ function App() {
     bot.ready();
     bot.expand();
     bot.BackButton.onClick(goBack);
+    bot.BackButton.show();
     bot.enableClosingConfirmation();
   }, []);
 

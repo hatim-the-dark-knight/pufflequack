@@ -49,7 +49,7 @@ const Restaurant = (props) => {
     };
     
     useEffect(() => {
-      bot.MainButton.text = "Book Table";
+      bot.MainButton.text = "BOOK TABLE";
       bot.MainButton.onClick(handleSubmit);
       bot.MainButton.show();
     }, [])
