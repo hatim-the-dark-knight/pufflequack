@@ -12,9 +12,8 @@
     color: var(--tg-theme-text-color);
 }
 
-input:focus, input:disabled {
-    background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
+.inp:focus, .inp:disabled {
+    background: transparent;
 }
 
 inp::placeholder {
