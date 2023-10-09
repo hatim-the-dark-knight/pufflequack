@@ -1,6 +1,6 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Link, Route, Routes, useNavigate } from "react-router-dom"
+import { Link, Route, Routes, useNavigate, useLocation } from "react-router-dom"
 import React from 'react'
 import { useEffect } from 'react'
 import Home from './components/Home'
@@ -18,9 +18,15 @@ const filteredItems = data.map((restaurant) => restaurant.category).filter((valu
 });
 
 function App() {
+  const location = useLocation();
   const navigate = useNavigate();
   const goBack = () => {
-    navigate(-1);
+    if(location.pathname === "/pufflequack/easydineouts") {
+      navigate(0);
+    }
+    else {
+      navigate(-1);
+    }
   }
 
   useEffect(() => {
@@ -28,8 +34,16 @@ function App() {
     bot.expand();
     bot.BackButton.onClick(goBack);
     bot.enableClosingConfirmation();
-    bot.BackButton.show();
   }, []);
+
+  useEffect(() => {
+    if(location.pathname === "/pufflequack/easydineouts") {
+      bot.BackButton.hide();
+    }
+    else {
+      bot.BackButton.show();
+    }
+  })
 
   return (
     <div className="container">

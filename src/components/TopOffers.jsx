@@ -5,7 +5,7 @@ import Content from './Content/Content'
 const TopOffers = () => {
   const navigate = useNavigate();
   const goBack = () => {
-    navigate(-1);
+    navigate("/pufflequack/easydineouts");
   }
   return (
     <div className=''>
