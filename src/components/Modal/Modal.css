@@ -20,7 +20,7 @@
 }
 
 .m-header, .m-footer {
-    padding: px 25px;
+    padding: 15px 25px;
 }
 
 .m-header {
@@ -38,7 +38,7 @@
 }
 
 .modal-body {
-    padding: 10px 30px;
+    padding: 5px 30px;
 }
 
 .btn {
