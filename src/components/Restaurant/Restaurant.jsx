@@ -49,6 +49,9 @@ const Restaurant = (props) => {
     };
     
     useEffect(() => {
+      bot.HapticFeedback.impactOccured(medium);
+      bot.sendData("hello");
+
       bot.MainButton.text = "BOOK TABLE";
       bot.MainButton.onClick(handleSubmit);
       bot.MainButton.show();

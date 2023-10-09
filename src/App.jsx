@@ -21,7 +21,7 @@ let backPath = "";
 const getBackPath = (path) => {
   if(path === "/pufflequack/easydineouts") {
     backPath = path;
-  } else if(path === ("/pufflequack/easydineouts/profile" || "/pufflequack/easydineouts/cuisines" || "/pufflequack/easydineouts/topOffers" || "/pufflequack/easydineouts/search")) {
+  } else if(path.includes("/pufflequack/easydineouts/")) {
     backPath = "/pufflequack/easydineouts";
   } else {
     backPath = "";
