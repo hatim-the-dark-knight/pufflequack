@@ -49,10 +49,9 @@ const Restaurant = (props) => {
     };
     
     useEffect(() => {
-      bot.sendData(JSON.stringify("hello"));
-
       bot.MainButton.text = "BOOK TABLE";
       bot.MainButton.onClick(handleSubmit);
+      bot.MainButton.enable();
       bot.MainButton.show();
     }, [])
 
