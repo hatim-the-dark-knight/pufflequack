@@ -61,7 +61,7 @@ const Profile = () => {
           <input type="text" onChange={handleInputChange} className="form-control inp" name="address" placeholder={state.address} required />
           <label htmlFor="place" className="form-label">Place</label>
           <input type="text" onChange={handleInputChange} className="form-control inp" name="place" placeholder={state.place} required /><br/>
-          <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button>
+          <button type="submit" id="prof-btn" className="w-100 btn btn-lg" value="Save" >Save</button>
         </form>
       </div>
         <Modal onClose={() => setShowModal(false)} showModal={showModal} details={state} message="Your profile is saved."/>
