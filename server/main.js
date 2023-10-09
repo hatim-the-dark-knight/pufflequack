@@ -1,12 +1,6 @@
 import { Telegraf } from 'telegraf'
-import { message } from 'telegraf/filters'
 
 const bot = new Telegraf("6603170388:AAFOgVDjefLYiha8q1igeMQmecWXrFsV7F8")
-
-bot.command('quit', async (ctx) => {
-  // Using context shortcut
-  await ctx.leaveChat()
-})
 
 bot.on(message('text'), async (ctx) => {
   // Using context shortcut

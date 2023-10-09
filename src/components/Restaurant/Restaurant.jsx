@@ -38,9 +38,9 @@ const Restaurant = (props) => {
       }));
     };
 
-    const handleSubmit = (event) => {
-      bot.impactOccured(medium);
-      event.preventDefault();
+    const handleSubmit = () => {
+      bot.HapticFeedback.impactOccured(medium);
+      // event.preventDefault();
       setShowModal(true);
 
       console.log(state);
