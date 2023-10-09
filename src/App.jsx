@@ -24,10 +24,12 @@ function App() {
     if(location.pathname === "/pufflequack/easydineouts") {
       navigate(0);
       bot.BackButton.hide();
+      alert("location is home page");
     }
     else {
       navigate(-1);
       bot.BackButton.show();
+      alert("location is not home page");
     }
   }
 

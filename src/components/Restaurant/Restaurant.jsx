@@ -9,9 +9,16 @@ const bot = window.Telegram.WebApp;
 
 const Restaurant = (props) => {
     const { pathname } = useLocation();
+    
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
+
+    useEffect(() => {
+      bot.MainButton.text = "Book Table";
+      bot.MainButton.onClick(handleSubmit);
+      bot.MainButton.show();
+    }, [])
 
     const index = props.index;
     const rest_data = data[index];
@@ -38,6 +45,7 @@ const Restaurant = (props) => {
     };
 
     const handleSubmit = (event) => {
+      bot.impactOccured(medium);
       event.preventDefault();
       setShowModal(true);
 
