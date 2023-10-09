@@ -73,6 +73,10 @@
 /* .f-date, .f-seats::placeholder {
     color: rgb(0, 0, 0);
 } */
+#prof-button {
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+}
 
 .f-confirm {
     width: 100%;

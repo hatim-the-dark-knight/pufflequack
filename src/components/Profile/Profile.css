@@ -20,3 +20,8 @@ inp:focus, inp:disabled {
 inp::placeholder {
     color: var(--tg-theme-text-color);
 }
+
+#prof-button {
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+}

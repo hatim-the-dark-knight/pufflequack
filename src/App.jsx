@@ -23,9 +23,11 @@ function App() {
   const goBack = () => {
     if(location.pathname === "/pufflequack/easydineouts") {
       navigate(0);
+      bot.BackButton.hide();
     }
     else {
       navigate(-1);
+      bot.BackButton.show();
     }
   }
 
@@ -35,15 +37,6 @@ function App() {
     bot.BackButton.onClick(goBack);
     bot.enableClosingConfirmation();
   }, []);
-
-  useEffect(() => {
-    if(location.pathname === "/pufflequack/easydineouts") {
-      bot.BackButton.hide();
-    }
-    else {
-      bot.BackButton.show();
-    }
-  })
 
   return (
     <div className="container">
