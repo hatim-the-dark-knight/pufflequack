@@ -17,19 +17,37 @@ const filteredItems = data.map((restaurant) => restaurant.category).filter((valu
   return self.indexOf(value) === index;
 });
 
+let backPath = "";
+const getBackPath = (path) => {
+  if(path === "/pufflequack/easydineouts") {
+    backPath = path;
+  } else if(path === ("/pufflequack/easydineouts/profile" || "/pufflequack/easydineouts/cuisines" || "/pufflequack/easydineouts/topOffers" || "/pufflequack/easydineouts/search")) {
+    backPath = "/pufflequack/easydineouts/";
+  } else if(path.includes("/pufflequack/easydineouts/cuisines/")) {
+    backPath = "/pufflequack/easydineouts/cuisines";
+  } else {
+    backPath = "";
+  }
+}
+
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const goBack = () => {
-    if(location.pathname === "/pufflequack/easydineouts") {
-      navigate(0);
-      bot.BackButton.hide();
-      alert("location is home page");
-    }
-    else {
+    getBackPath(location.pathname);
+    if(backPath === "") {
       navigate(-1);
       bot.BackButton.show();
       alert("location is not home page");
+    }
+    else {
+      navigate(backPath);
+      if(backPath === "/pufflequack/easydineouts") {
+        bot.BackButton.hide();
+      } else {
+        bot.BackButton.show();
+      }
+      alert("location is home page");
     }
   }
 
@@ -37,7 +55,6 @@ function App() {
     bot.ready();
     bot.expand();
     bot.BackButton.onClick(goBack);
-    bot.BackButton.show();
     bot.enableClosingConfirmation();
   }, []);
 
@@ -53,13 +70,13 @@ function App() {
         {
           data.map((item, i) => {
           return(
-              <Route key={i} path={`/pufflequack/easydineouts/${i}`} element={<Restaurant index={i}/>} />
+              <Route key={i} path={`/pufflequack/easydineouts/restaurants/${i}`} element={<Restaurant index={i}/>} />
           )})
         }
         {
           filteredItems.map((item, i) => {
             return(
-                <Route key={i} path={`/pufflequack/easydineouts/${item}`} element={<Cuisines category={item}/>} />
+                <Route key={i} path={`/pufflequack/easydineouts/cuisines/${item}`} element={<Cuisines category={item}/>} />
             )})
         }
       </Routes>

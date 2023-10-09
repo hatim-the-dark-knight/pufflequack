@@ -11,8 +11,8 @@ const bot = window.Telegram.WebApp;
 const Home = () => {
   useEffect(() => {
     bot.BackButton.hide();
-  });
-  
+  }, []);
+
   return (
     <div className=''>
         <Header/>

@@ -14,12 +14,6 @@ const Restaurant = (props) => {
       window.scrollTo(0, 0);
     }, [pathname]);
 
-    useEffect(() => {
-      bot.MainButton.text = "Book Table";
-      bot.MainButton.onClick(handleSubmit);
-      bot.MainButton.show();
-    }, [])
-
     const index = props.index;
     const rest_data = data[index];
     
@@ -53,6 +47,12 @@ const Restaurant = (props) => {
       // alert(`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`)
       // bot.showPopup("This is just a test");
     };
+    
+    useEffect(() => {
+      bot.MainButton.text = "Book Table";
+      bot.MainButton.onClick(handleSubmit);
+      bot.MainButton.show();
+    }, [])
 
     const navigate = useNavigate();
     const goBack = () => {
@@ -101,7 +101,7 @@ const Restaurant = (props) => {
                 <option value='3pm - 4pm'>3pm - 4pm</option>
               </select>
             </div>
-            <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button>
+            {/* <button type="submit" id="prof-btn" className="w-100 btn btn-primary btn-lg" value="Save" >Save</button> */}
           </form>
           <Modal onClose={() => setShowModal(false)} showModal={showModal} details={state} message={`Table booked for ${state.date} from ${state.time_slot} for ${state.seats} people.`}/>
           <div className="other-content">

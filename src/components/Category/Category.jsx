@@ -14,7 +14,7 @@ const Category = () => {
         {
             filteredItems.map((category, i) => {
                 return(
-                    <Link key={i} to={`/pufflequack/easydineouts/${category}`} className="menu-link">
+                    <Link key={i} to={`/pufflequack/easydineouts/cuisines/${category}`} className="menu-link">
                     <button className="menu-btn">
                         {category}
                     </button>

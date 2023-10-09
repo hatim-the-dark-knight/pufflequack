@@ -9,13 +9,14 @@
 }
 
 .form-title {
-    font-size: 24px;
+    font-size: 22px;
     padding: 1rem 0;
+    font-weight: 600;
     /* color: white; */
     color: var(--tg-theme-text-color);
 }
 
-.f-date, .f-seats, .f-time-slots {
+.f-date, .f-seats, .f-time-slots, .f-time-slots-opts {
     /* background-color: rgb(241, 241, 241);
     color: black; */
     background-color: var(--tg-theme-secondary-bg-color);
@@ -73,7 +74,7 @@
 /* .f-date, .f-seats::placeholder {
     color: rgb(0, 0, 0);
 } */
-#prof-button {
+.btn-lg {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
 }
