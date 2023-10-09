@@ -71,7 +71,7 @@ cd pufflequack
 yarn
 ```  
 
-### Now, to run the project
+## Now, to run the project
 ```bash
 yarn run dev
 ```
