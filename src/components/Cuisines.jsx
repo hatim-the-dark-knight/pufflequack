@@ -19,7 +19,7 @@ const Cuisines = (props) => {
     navigate('/pufflequack/easydineouts');
   }
   return (
-    <div className=''>
+    <div className='cuisines'>
         <i className="btn-back bi-arrow-left" onClick={goBack}></i>
         <div className="content-title">
           Cuisines

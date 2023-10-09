@@ -6,13 +6,7 @@ import SearchBar from './SearchBar/SearchBar'
 import Content from './Content/Content'
 import '../App.css'
 
-const bot = window.Telegram.WebApp;
-
 const Home = () => {
-  useEffect(() => {
-    bot.BackButton.hide();
-  }, []);
-
   return (
     <div className=''>
         <Header/>

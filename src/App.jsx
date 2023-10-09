@@ -38,16 +38,17 @@ function App() {
     if(backPath === "") {
       navigate(-1);
       bot.BackButton.show();
-      alert("location is not home page");
+      bot.showPopup("Success", "(empty) Can navigate back", [{"type": "close"}]);
     }
     else {
       navigate(backPath);
       if(backPath === "/pufflequack/easydineouts") {
         bot.BackButton.hide();
+        bot.showPopup("Error", "Cannot navigate back", [{"type": "close"}]);
       } else {
         bot.BackButton.show();
+        bot.showPopup("Success", "Can navigate back", [{"type": "close"}]);
       }
-      alert("location is home page");
     }
   }
 
