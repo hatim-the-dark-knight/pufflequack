@@ -3,7 +3,7 @@
 ## About  
 ### "easydineouts" - A Quick Table Reservation Solution  
 
-Looking to plan a delightful dining experience? EasyDineout, our user-friendly Telegram web app, simplifies restaurant reservations with a seamless interface. Here’s what you can do on Easy Dineout:
+Looking to plan a delightful dining experience? EasyDineout, our user-friendly Telegram web app, simplifies restaurant reservations with a seamless interface. Here’s what you can do on easydineouts:
 
 1. *Explore Popular Restaurants:*
    Browse through a curated list of popular restaurants nearby, showcasing their overall ratings and price ranges for a quick overview.
@@ -17,13 +17,13 @@ Looking to plan a delightful dining experience? EasyDineout, our user-friendly T
 4. *Effortless Restaurant Search:*
    Utilize the search bar to swiftly find your favorite restaurants, making the decision-making process a breeze.
 
-5. *Smart Filtering Options:*
+5. *Effective Filtering Options:*
    Narrow down your restaurant choices by filtering based on cuisine preferences and flat discount offers on various menu items.
 
 6. *Table Reservations Made Easy:*
    Reserve a table at your chosen restaurant effortlessly by specifying the date, number of guests, and available time slots. Enjoy a savory delight with your loved ones.
 
-Book your table now and savor a delightful dining experience with EasyDineout!
+Book your table now and savor a delightful dining experience with easydineouts!
 
 ## To run easydineouts
 
@@ -75,6 +75,18 @@ yarn
 ```bash
 yarn run dev
 ```
+You can access the site from the link provided while running the above command.
+
+## Server
+
+To launch the bot, call this locally
+```bash
+node server\main.js
+```
+This command configures a server to listen for incoming commands from a user via a bot. When a command is received, the server processes it and responds accordingly.  
+
+> Now open telegram, go to http://t.me/easydineouts_bot and start the bot using */start* command, launch the web app from the inline button "Book Table".
+
 
 ## To create a new project similar to this  
 
@@ -126,9 +138,6 @@ easydineouts has *App*, *Cover*, *Home*, *Profile*, *Cuisines*, *TopOffers*, *Se
 - Utilizes ReactDOM to render the root component into the DOM.
 - Requires `App.jsx` for the main component.
 - Requires `index.css` for styling.
-
-Feel free to include this documentation in your README file on GitHub. If you need further assistance or modifications, please let me know!
-
 
 ### App Component
 
@@ -512,7 +521,6 @@ The component utilizes React hooks to manage state:
 
 ## Easy Dineout Web App - Potential Errors and Exceptions
 
-While the Easy Dineout web app functions smoothly based on the provided code, there are potential errors and exceptions that users or developers might encounter during usage or development.  
 1. *Server Errors*
 2. *Navigation Errors*
 3. *Data Fetching Errors*
@@ -524,11 +532,11 @@ While the Easy Dineout web app functions smoothly based on the provided code, th
 9. *UI/UX Inconsistencies*
 10. *Dependency Version Conflicts*
 
-Addressing and mitigating these potential errors and exceptions will contribute to a smoother and more reliable user experience with the Easy Dineout web app.
 
 ## Deployment  
 
 The deployment was done using GitHub Actions.  
-First, you need to set up a workflow similkar to the one in the .github/workflows/deploy.yml.  
-Second, you need to go to *Settings*, under *Code and Automation*, click on *Pages*. Under *Build and Deployment*, blow that *Source*, select *GitHub Actions*.  
+- First, you need to set up a workflow similkar to the one in the .github/workflows/deploy.yml.  
+- Second, you need to go to *Settings*, under *Code and Automation*, click on *Pages*. Under *Build and Deployment*, blow that *Source*, select *GitHub Actions*.  
+  
 Now , every time you push a commit, the website is updated.
