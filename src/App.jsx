@@ -35,6 +35,7 @@ function App() {
     bot.ready();
     bot.expand();
     bot.BackButton.onClick(goBack);
+    bot.BackButton.show();
     bot.enableClosingConfirmation();
   }, []);
 
