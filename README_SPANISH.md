@@ -1,8 +1,8 @@
 # easydineouts
 
 ## Acerca de
-"easydineouts" - Una solución rápida para reservar mesas
-[@easydineouts](http://t.me/easydineouts_bot)
+"easydineouts" - Una solución rápida para reservar mesas  
+[@easydineouts](http://t.me/easydineouts_bot)  
 ¿Buscas planificar una experiencia gastronómica encantadora? EasyDineout, nuestra aplicación web de Telegram fácil de usar, simplifica las reservas en restaurantes con una interfaz fluida. Esto es lo que puedes hacer en easydineouts:
 
 - Explorar Restaurantes Populares: Navega por una lista seleccionada de restaurantes populares cercanos, mostrando sus calificaciones generales y rangos de precios para obtener una visión rápida.
