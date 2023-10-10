@@ -17,6 +17,7 @@
 - Reservaciones de Mesa Simplificadas: Reserva una mesa en el restaurante que elijas de manera sencilla especificando la fecha, el número de invitados y los horarios disponibles. Disfruta de una deliciosa comida con tus seres queridos.
 
 ¡Reserva tu mesa ahora y disfruta de una experiencia gastronómica encantadora con easydineouts!
+[@easydineouts](http://t.me/easydineouts_bot)
 
 ## Para ejecutar easydineouts
 - Instala node: [Descargar Node.js](https://nodejs.org/en/download)
