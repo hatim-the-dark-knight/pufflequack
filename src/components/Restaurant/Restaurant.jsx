@@ -52,7 +52,7 @@ const Restaurant = (props) => {
       bot.MainButton.text = "BOOK TABLE";
       bot.MainButton.onClick(function() {
         bot.MainButton.text = "DONE";
-        console.log(data);
+        console.log(state);
         window.Telegram.WebApp.sendData(JSON.stringify(state));
       });
       bot.MainButton.enable();
