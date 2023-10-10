@@ -2,6 +2,7 @@
 
 ## Acerca de
 "easydineouts" - Una solución rápida para reservar mesas
+[@easydineouts](http://t.me/easydineouts_bot)
 ¿Buscas planificar una experiencia gastronómica encantadora? EasyDineout, nuestra aplicación web de Telegram fácil de usar, simplifica las reservas en restaurantes con una interfaz fluida. Esto es lo que puedes hacer en easydineouts:
 
 - Explorar Restaurantes Populares: Navega por una lista seleccionada de restaurantes populares cercanos, mostrando sus calificaciones generales y rangos de precios para obtener una visión rápida.
@@ -17,7 +18,6 @@
 - Reservaciones de Mesa Simplificadas: Reserva una mesa en el restaurante que elijas de manera sencilla especificando la fecha, el número de invitados y los horarios disponibles. Disfruta de una deliciosa comida con tus seres queridos.
 
 ¡Reserva tu mesa ahora y disfruta de una experiencia gastronómica encantadora con easydineouts!
-[@easydineouts](http://t.me/easydineouts_bot)
 
 ## Para ejecutar easydineouts
 - Instala node: [Descargar Node.js](https://nodejs.org/en/download)
@@ -26,58 +26,74 @@
 ```sh
 node --version
 npm --version
+```
 
 Instala yarn
+```sh
 npm install --global yarn
+```
 
 Verifica si yarn está instalado
-
+```sh
 yarn --version
-
+```
 Instala git: Descargar Git
 Verifica si git está instalado
+```sh
 git --version
-
+```
 Clona este proyecto
+```sh
 git clone https://github.com/hatim-the-dark-knight/pufflequack.git
-
+```
 Cambia al directorio donde se encuentran las carpetas public y src
-
+```sh
 cd pufflequack
+```
 
 Instala las dependencias
-
+```sh
 yarn
-
+```
 Ahora, para ejecutar el proyecto
+```sh
 yarn run dev
+```
 
 Puedes acceder al sitio desde el enlace proporcionado al ejecutar el comando anterior.
 Servidor
 Para lanzar el bot, llama a esto localmente
+```sh
 node server\main.js
+```
 
 Este comando configura un servidor para escuchar comandos entrantes de un usuario a través de un bot. Cuando se recibe un comando, el servidor lo procesa y responde en consecuencia.
 Ahora abre Telegram, ve a http://t.me/easydineouts_bot y comienza el bot usando el comando /start, inicia la aplicación web desde el botón en línea "Reservar Mesa".
 
 Para crear un nuevo proyecto similar a este
 Crea un nuevo proyecto
+```sh
 yarn create vite
+```
 
-¿Está bien continuar? y
-Nombre del proyecto -> nombre-de-tu-proyecto
-Selecciona un marco -> React
-Selecciona javascript
-El proyecto nombre-de-tu-proyecto está creado
+> ¿Está bien continuar? y
+> Nombre del proyecto -> nombre-de-tu-proyecto
+> Selecciona un marco -> React
+> Selecciona javascript
+> El proyecto nombre-de-tu-proyecto está creado
+
 Cambia al directorio donde se encuentran las carpetas public y src
+```sh
 cd pufflequack
-
+```
 Instala las dependencias
+```sh
 yarn
-
+```
 Ejecuta el proyecto
+```sh
 yarn run dev
-
+```
 ## Componentes utilizados en este proyecto
 
 easydineouts tiene los componentes App, Cover, Home, Profile, Cuisines, TopOffers y SearchPage, y también hay componentes para cada Restaurante. También hay componentes Card, Modal y Content que se reutilizan en todo el código. Otros componentes incluyen Header, SearchBar, CategoryMenu y Category de Cuisines.
@@ -499,7 +515,6 @@ La implementación se realizó utilizando GitHub Actions.
 2. Segundo, debes ir a Configuración, dentro de Código y Automatización, hacer clic en Páginas. Bajo Build y Deployment, selecciona GitHub Actions.
 3. Ahora, cada vez que hagas un commit, el sitio web se actualizará.
 
-```markdown
 
 
 
