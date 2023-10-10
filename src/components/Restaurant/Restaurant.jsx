@@ -51,7 +51,8 @@ const Restaurant = (props) => {
     useEffect(() => {
       bot.MainButton.text = "BOOK TABLE";
       bot.MainButton.onClick(function() {
-        bot.MainButton.text = "DONE"
+        bot.MainButton.text = "DONE";
+        console.log(data);
         window.Telegram.WebApp.sendData(JSON.stringify(state));
       });
       bot.MainButton.enable();
