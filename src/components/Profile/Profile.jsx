@@ -37,8 +37,6 @@ const Profile = () => {
       elements[i].disabled = true;
   }
     console.log(state + showModal);
-    // alert(`Name: ${state.name}\nPhone Number: ${state.phoneNumber}\nEmail: ${state.email}\nAddress: ${state.address}, ${state.place}`)
-    // bot.showPopup("This is just a test");
   };
 
   const goBack = () => {
