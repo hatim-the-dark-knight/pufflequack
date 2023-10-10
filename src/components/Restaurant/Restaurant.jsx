@@ -58,7 +58,7 @@ const Restaurant = (props) => {
       });
       bot.MainButton.enable();
       bot.MainButton.show();
-    }, [])
+    }, [state])
 
     const navigate = useNavigate();
     const goBack = () => {
