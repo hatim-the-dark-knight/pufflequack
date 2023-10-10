@@ -23,7 +23,8 @@ Looking to plan a delightful dining experience? EasyDineout, our user-friendly T
 6. *Table Reservations Made Easy:*
    Reserve a table at your chosen restaurant effortlessly by specifying the date, number of guests, and available time slots. Enjoy a savory delight with your loved ones.
 
-Book your table now and savor a delightful dining experience with easydineouts!
+Book your table now and savor a delightful dining experience with easydineouts!  
+[@easydineouts](http://t.me/easydineouts_bot)
 
 ## To run easydineouts
 
