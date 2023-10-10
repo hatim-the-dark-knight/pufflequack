@@ -3,6 +3,8 @@
 ## About  
 ### "easydineouts" - A Quick Table Reservation Solution  
 
+[@easydineouts](http://t.me/easydineouts_bot)  
+
 Looking to plan a delightful dining experience? EasyDineout, our user-friendly Telegram web app, simplifies restaurant reservations with a seamless interface. Here’s what you can do on easydineouts:
 
 1. *Explore Popular Restaurants:*
@@ -24,7 +26,6 @@ Looking to plan a delightful dining experience? EasyDineout, our user-friendly T
    Reserve a table at your chosen restaurant effortlessly by specifying the date, number of guests, and available time slots. Enjoy a savory delight with your loved ones.
 
 Book your table now and savor a delightful dining experience with easydineouts!  
-[@easydineouts](http://t.me/easydineouts_bot)
 
 ## To run easydineouts
 
@@ -525,13 +526,9 @@ The component utilizes React hooks to manage state:
 1. *Server Errors*
 2. *Navigation Errors*
 3. *Data Fetching Errors*
-4. *State Management Errors*
-5. *Form Submission Errors*
-6. *Component Loading Errors*
-7. *Compatibility Issues*
-8. *Search Functionality Errors*
-9. *UI/UX Inconsistencies*
-10. *Dependency Version Conflicts*
+4. *Component Reloading Errors*
+5. *UI/UX Inconsistencies*
+6. *Dependency Version Conflicts*
 
 
 ## Deployment  
