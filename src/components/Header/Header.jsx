@@ -30,7 +30,7 @@ const Header = () => {
       <div className="top-bar">
         <span className="location-label">
           <i className='bi-geo-alt-fill'></i>&nbsp;
-          Kochi, Kerala
+          Bangalore, India
           {/* {(location === null) ? "Your location" : `(${location.latitude}, ${location.longitude})`} */}
         </span>
         <i className="bi-person-circle" onClick={goBack}></i>

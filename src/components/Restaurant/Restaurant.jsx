@@ -21,9 +21,9 @@ const Restaurant = (props) => {
     let dd = today.getDate() < 10 ? `0${today.getDate()}` : today.getDate();
     let mm = (today.getMonth() + 1) < 10 ? `0${today.getMonth() + 1}` : today.getMonth() + 1;
 
-    const datte = today.getFullYear() + "-" + mm + '-' + dd;
+    const date = today.getFullYear() + "-" + mm + '-' + dd;
     const [state, setState] = useState({
-      date: datte,
+      date: date,
       seats: 1,
       time_slot: '9am - 10am', // Set a default value
     });
@@ -52,8 +52,9 @@ const Restaurant = (props) => {
       bot.MainButton.text = "BOOK TABLE";
       bot.MainButton.onClick(function() {
         bot.MainButton.text = "DONE";
-        console.log(state);
-        window.Telegram.WebApp.sendData(JSON.stringify(state));
+        const newState = { ...state };
+        console.log(newState);
+        window.Telegram.WebApp.sendData(JSON.stringify(newState));
       });
       bot.MainButton.enable();
       bot.MainButton.show();
