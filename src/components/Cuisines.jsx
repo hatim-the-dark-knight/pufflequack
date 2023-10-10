@@ -16,7 +16,7 @@ const Cuisines = (props) => {
 
   const navigate = useNavigate();
   const goBack = () => {
-    navigate('/pufflequack/easydineouts');
+    navigate('/pufflequack/home/');
   }
   return (
     <div className='cuisines'>

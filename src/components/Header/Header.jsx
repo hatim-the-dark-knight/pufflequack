@@ -22,7 +22,7 @@ const Header = () => {
   const navigate = useNavigate();
   
   const goBack = () => {
-    navigate('/pufflequack/easydineouts/profile');
+    navigate('/pufflequack/profile/');
   }
 
   return (

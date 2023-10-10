@@ -18,6 +18,7 @@
 
 inp::placeholder {
     color: var(--tg-theme-text-color);
+    opacity: 1;
 }
 
 #prof-button {

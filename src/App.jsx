@@ -17,38 +17,14 @@ const filteredItems = data.map((restaurant) => restaurant.category).filter((valu
   return self.indexOf(value) === index;
 });
 
-let backPath = "";
-const getBackPath = (path) => {
-  if(path === "/pufflequack/easydineouts") {
-    backPath = path;
-  } else if(path.includes("/pufflequack/easydineouts/")) {
-    backPath = "/pufflequack/easydineouts";
-  } else {
-    backPath = "";
-  }
-}
 
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const goBack = () => {
     bot.MainButton.hide();
-    getBackPath(location.pathname);
-    if(backPath === "") {
       navigate(-1);
       bot.BackButton.show();
-      bot.showPopup("Success", "(empty) Can navigate back", [{"type": "close"}]);
-    }
-    else {
-      navigate(backPath);
-      if(backPath === "/pufflequack/easydineouts") {
-        bot.BackButton.hide();
-        bot.showAlert("Cannot navigate back");
-      } else {
-        bot.BackButton.show();
-        bot.showAlert("Can navigate back");
-      }
-    }
   }
 
   useEffect(() => {
@@ -63,21 +39,21 @@ function App() {
     <div className="container">
       <Routes>
         <Route path="/pufflequack/" element={<Cover />} />
-        <Route path="/pufflequack/easydineouts" element={<Home />} />
-        <Route path="/pufflequack/easydineouts/profile" element={<Profile />} />
-        <Route path="/pufflequack/easydineouts/cuisines" element={<Cuisines />} />
-        <Route path="/pufflequack/easydineouts/topOffers" element={<TopOffers />} />
-        <Route path="/pufflequack/easydineouts/search" element={<SearchPage />} />
+        <Route path="/pufflequack/home/" element={<Home />} />
+        <Route path="/pufflequack/profile/" element={<Profile />} />
+        <Route path="/pufflequack/cuisines/" element={<Cuisines />} />
+        <Route path="/pufflequack/topOffers/" element={<TopOffers />} />
+        <Route path="/pufflequack/search/" element={<SearchPage />} />
         {
           data.map((item, i) => {
           return(
-              <Route key={i} path={`/pufflequack/easydineouts/restaurants/${i}`} element={<Restaurant index={i}/>} />
+              <Route key={i} path={`/pufflequack/restaurants/${i}/`} element={<Restaurant index={i}/>} />
           )})
         }
         {
           filteredItems.map((item, i) => {
             return(
-                <Route key={i} path={`/pufflequack/easydineouts/cuisines/${item}`} element={<Cuisines category={item}/>} />
+                <Route key={i} path={`/pufflequack/cuisines/${item}/`} element={<Cuisines category={item}/>} />
             )})
         }
       </Routes>

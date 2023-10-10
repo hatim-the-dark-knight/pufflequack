@@ -7,12 +7,12 @@ const CategoryMenu = () => {
   return (
     <div className="cm-container">
         <div className="btn-list">
-            <Link to="/pufflequack/easydineouts/topOffers" className="menu-link">
+            <Link to="/pufflequack/topOffers/" className="menu-link">
                 <button   on className="menu-btn">
                     Top Offers
                 </button>
             </Link>
-            <Link to="/pufflequack/easydineouts/cuisines" className="menu-link">
+            <Link to="/pufflequack/cuisines/" className="menu-link">
                 <button className="menu-btn">
                     Cuisines
                 </button>

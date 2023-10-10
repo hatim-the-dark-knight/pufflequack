@@ -14,7 +14,7 @@ const Cover = () => {
     const renderHome = async event => {
         await delay(2000);
         console.log("Now");
-        navigate("/pufflequack/easydineouts");
+        navigate("/pufflequack/home/");
     }
 
     useEffect(() => {
